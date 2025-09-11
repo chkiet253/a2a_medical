@@ -1,0 +1,2414 @@
+[
+  {
+    "Disease": "Alzheimer",
+    "Question": "Tôi hiện đang có các triệu chứng như hay quên thông tin vừa tiếp nhận, khó tập trung và định hướng thời gian. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Buồng Trứng Đa Nang",
+    "Question": "Tôi hiện đang có các triệu chứng như kinh nguyệt không đều, rậm lông và tăng cân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bàn Chân Đái Tháo Đường",
+    "Question": "Tôi hiện đang có các triệu chứng như tê buốt bàn chân và cảm giác đi như trên cát. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bàng Quang Tăng Hoạt",
+    "Question": "Tôi hiện đang có các triệu chứng như buồn tiểu đột ngột và sợ bị rò rỉ nước tiểu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Béo Phì Độ 1",
+    "Question": "Tôi hiện đang có các triệu chứng như số đo vòng eo tăng và thường xuyên có cảm giác đói bụng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Béo Phì",
+    "Question": "Tôi hiện đang có số đo vòng eo lớn và thường xuyên cảm thấy đói bụng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Băng Huyết Sau Sinh",
+    "Question": "Tôi đang ra máu nhiều một cách bất thường sau khi sinh. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bướu Cổ Lành Tính",
+    "Question": "Tôi hiện đang có các triệu chứng như sưng ở cổ, khó nuốt và khàn tiếng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bướu Cổ Ác Tính",
+    "Question": "Tôi hiện đang có các triệu chứng như khó thở, ho khan và có khối u ở cổ. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bướu Giáp Keo",
+    "Question": "Tôi thấy tuyến giáp của mình phình to, đôi khi gây khó thở. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bướu Giáp Lan Tỏa",
+    "Question": "Tôi hay bị hồi hộp, tim đập nhanh, run tay và sụt cân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bướu Giáp Nhân Thùy Phải",
+    "Question": "Tôi thấy xuất hiện một khối u ở cổ bên phải, không đau nhưng hơi khó chịu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bướu Giáp Đa Nhân 2 Thùy",
+    "Question": "Tôi hiện đang có các triệu chứng như sụt cân, run tay và lo lắng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bướu Tuyến Giáp Đa Nhân",
+    "Question": "Tôi hiện đang có các triệu chứng như sụt cân, run tay và lo lắng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bế Sản Dịch",
+    "Question": "Tôi hiện đang có các triệu chứng như sản dịch chảy rất ít và có mùi hôi khó chịu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Basedow",
+    "Question": "Tôi hiện đang có các triệu chứng như giảm cân nhanh chóng dù vẫn ăn uống bình thường. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Bạch Hầu",
+    "Question": "Tôi hiện đang có các triệu chứng như sổ mũi, chảy ra chất mủ nhầy đôi khi có máu, có màng trắng ở vách ngăn mũi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Chlamydia",
+    "Question": "Tôi hiện đang có triệu chứng tiểu buốt, tiểu rát và dịch trắng đục tiết ra từ lỗ sáo. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Chàm",
+    "Question": "Tôi hiện đang có các triệu chứng như ngứa và da khô. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Crohn",
+    "Question": "Tôi hiện đang có các triệu chứng như đau quặn bụng, tiêu chảy ra máu và sút cân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Cúm",
+    "Question": "Tôi hiện đang có các triệu chứng như sốt cao, ớn lạnh và ho khan. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Cơ Tim Giãn Nở",
+    "Question": "Tôi hiện đang có các triệu chứng như khó thở, hụt hơi khi gắng sức và sưng phù bàn chân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Cơ Tim Phì Đại",
+    "Question": "Tôi hay bị khó thở khi gắng sức. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Cườm Nước Glaucoma",
+    "Question": "Tôi đang cảm thấy mất thị lực ngoại vi và khó lái xe. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Dại",
+    "Question": "Tôi đang cảm thấy bồn chồn, lo lắng và sợ nước sau khi bị chó cắn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Giang Mai",
+    "Question": "Tôi hiện đang có một vết loét nhỏ, tròn, không đau ở bộ phận sinh dục. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Giun Lươn",
+    "Question": "Tôi hiện đang có các triệu chứng như ngứa, nổi mề đay ngoằn ngoèo ở chân, thay đổi vị trí liên tục. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Giun Rồng",
+    "Question": "Tôi hiện đang có các triệu chứng như xuất hiện vết phồng rộp ở da chân, ngứa dữ dội và đau rát. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Giun Đũa",
+    "Question": "Tôi hay bị ho dai dẳng, khó thở và thở khò khè. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Giun Đầu Gai",
+    "Question": "Tôi hay bị sốt, mệt mỏi và chán ăn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Giác Mạc Hình Chóp",
+    "Question": "Tôi hiện đang có các triệu chứng như nhìn mờ, phải thay kính liên tục và nhạy cảm với ánh sáng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Gout Cấp Tính",
+    "Question": "Tôi hiện đang có các triệu chứng như đau nhức dữ dội ở khớp ngón chân cái, sưng tấy và nóng đỏ. Cơn đau xuất hiện đột ngột vào ban đêm. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Gout",
+    "Question": "Tôi hiện đang có các triệu chứng như đau khớp dữ dội ở ngón chân cái, sưng tấy và nóng đỏ. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Ho",
+    "Question": "Tôi hiện đang có các triệu chứng như ho khan, khô cổ họng, đau rát họng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Hở Van Tim",
+    "Question": "Tôi hiện đang có các triệu chứng như khó thở khi nằm và mệt mỏi kéo dài. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Lao Phổi",
+    "Question": "Tôi hiện đang có các triệu chứng như ho khan kéo dài và sốt nhẹ về chiều. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Lý Ống Phúc Tinh Mạc",
+    "Question": "Tôi hiện đang có các triệu chứng như một khối tròn bất thường ở bẹn và di chuyển về phía bìu khi rặn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Lậu",
+    "Question": "Tôi hiện đang có các triệu chứng như lỗ sáo dương vật tiết dịch màu trắng và đau rát khi đi tiểu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Moyamoya",
+    "Question": "Tôi hiện đang có các triệu chứng như nhức đầu, chóng mặt và suy giảm cảm giác. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Mù Màu",
+    "Question": "Tôi hay gặp khó khăn khi phân biệt màu xanh lá cây và màu đỏ. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Mạch Vành",
+    "Question": "Tôi hiện đang có các triệu chứng như đau thắt ngực và khó thở khi gắng sức. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Nhiễm Sán Chó",
+    "Question": "Tôi hay thấy các đốt sán bò ra ở hậu môn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Nhược Cơ",
+    "Question": "Tôi bị sụp mí mắt và nhìn đôi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Parkinson",
+    "Question": "Tôi hay bị run tay chân khi nghỉ ngơi và khó khăn trong việc vận động. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Phổi Tắc Nghẽn Mạn Tính (COPD)",
+    "Question": "Tôi hiện đang có các triệu chứng như ho có đờm kéo dài và khó thở khi vận động. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Polyp Mũi",
+    "Question": "Tôi hiện đang có các triệu chứng như nghẹt mũi liên tục và mất khứu giác. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Quai Bị",
+    "Question": "Tôi hiện đang có các triệu chứng như sốt, mệt mỏi, chán ăn và đau họng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Rubella",
+    "Question": "Tôi hiện đang có các triệu chứng như phát ban, sốt nhẹ và viêm kết mạc. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Rận Mu",
+    "Question": "Tôi hiện đang có các triệu chứng như ngứa dữ dội ở vùng mu và phát hiện những con rận nhỏ màu nâu xám. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Sán Dây Lợn",
+    "Question": "Tôi hiện đang có các triệu chứng như buồn nôn, nhức đầu, tiêu chảy và sụt cân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Sán Dây",
+    "Question": "Tôi hiện đang có các triệu chứng như buồn nôn, nhức đầu, tiêu chảy và sụt cân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Sán Lá Gan",
+    "Question": "Tôi hiện đang có các triệu chứng như đau vùng thượng vị, hạ sườn phải và gan sưng to. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Tay Chân Miệng",
+    "Question": "Tôi hiện đang có các triệu chứng như sốt nhẹ, mệt mỏi, chán ăn và đau họng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Thoát Vị Bẹn",
+    "Question": "Tôi thấy xuất hiện khối phồng ở vùng bẹn, to lên khi đứng lâu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Thần Kinh Ngoại Biên",
+    "Question": "Tôi hiện đang có các triệu chứng như cảm giác đeo “găng tay” hoặc “mang vớ” ở tay chân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Thần Kinh Đái Tháo Đường",
+    "Question": "Tôi hiện đang có các triệu chứng như tê bì, cảm giác châm chích ở bàn chân và cẳng chân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Thần Kinh",
+    "Question": "Tôi hay bị đau và yếu cơ, đặc biệt là ở chân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Thủy Đậu",
+    "Question": "Tôi đang bị sốt, mệt mỏi và nổi mẩn ngứa màu đỏ trên da. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Tim Bẩm Sinh Không Tím",
+    "Question": "Tôi hiện đang có các triệu chứng như khó thở khi vận động, tức ngực và đổ mồ hôi nhiều. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Tim Bẩm Sinh Tím",
+    "Question": "Tôi hiện đang có các triệu chứng như môi, ngón tay và ngón chân con tôi có màu xanh. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Tim Bẩm Sinh",
+    "Question": "Tôi hiện đang có các triệu chứng như khó thở, thở nhanh, bú ít và cử bú kéo dài. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Trĩ Huyết Khối",
+    "Question": "Tôi hiện đang có các triệu chứng như cục nhỏ màu xanh sẫm quanh hậu môn và sưng đau. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Trĩ Ngoại",
+    "Question": "Tôi hiện đang có các triệu chứng như đi ngoài ra máu đỏ tươi và cảm giác mót rặn, tức ở hậu môn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Trĩ Nội",
+    "Question": "Tôi hiện đang có các triệu chứng như chảy máu khi đi đại tiện và thấy máu đỏ tươi trên giấy vệ sinh. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Trĩ Sau Sinh",
+    "Question": "Tôi hiện đang có các triệu chứng như đại tiện ra máu và ngứa hậu môn sau khi sinh con. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Trĩ",
+    "Question": "Tôi hiện đang có các triệu chứng như búi trĩ sa ra ngoài hậu môn khi đi tiêu và sưng đau. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Túi Thừa Đại Tràng",
+    "Question": "Tôi hiện đang có các triệu chứng như đau bụng dữ dội, sốt và chướng bụng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Tắc Tĩnh Mạch Võng Mạc",
+    "Question": "Tôi hiện đang có các triệu chứng như mờ mắt hoặc mất thị lực ở một bên mắt. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Tự Miễn",
+    "Question": "Tôi hiện đang có các triệu chứng như mệt mỏi kéo dài không rõ nguyên nhân, sốt dai dẳng và đau mỏi toàn thân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Van Tim",
+    "Question": "Tôi hiện đang có các triệu chứng như khó thở ngay cả khi nằm nghỉ ngơi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Viêm Cơ Tim",
+    "Question": "ôi hiện đang có các triệu chứng như sốt cao, đau nhức đầu và mỏi cơ. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Viêm Gan B",
+    "Question": "Tôi hiện đang có các triệu chứng như sốt, mệt mỏi, chán ăn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Viêm Gan",
+    "Question": "Tôi hiện đang có các triệu chứng như sốt, mệt mỏi và chán ăn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Viêm Họng Cấp",
+    "Question": "ôi hiện đang có các triệu chứng như sốt, họng sưng đỏ, ngứa rát và ho. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Viêm Họng",
+    "Question": "Tôi hiện đang có các triệu chứng như đau họng, khó nuốt, vướng đàm và ho. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Viêm Loét Dạ Dày",
+    "Question": "Tôi hiện đang có các triệu chứng như nóng rát, cồn cào và đau ở vùng bụng trên rốn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Viêm Tụy Cấp",
+    "Question": "Tôi hiện đang có các triệu chứng như đau bụng trên và lan ra sau lưng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Viêm Xoang",
+    "Question": "Tôi hiện đang có các triệu chứng như đau nhức vùng trán và chảy nước mũi màu xanh. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Võng Mạc Tiểu Đường",
+    "Question": "Tôi hiện đang có các triệu chứng như nhìn mờ và thấy những vùng sáng tối. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Whitmore",
+    "Question": "Tôi hiện đang có các triệu chứng như sốt, sụt cân, đau bụng và nổi những nốt sần đỏ trên da. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Xốp Xơ Tai",
+    "Question": "Tôi hiện đang có các triệu chứng như nghe kém dần theo thời gian và khó nghe âm thanh thấp. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Đau Dây Thần Kinh Sinh Ba",
+    "Question": "Tôi đang cảm thấy đau nhói như điện giật ở một bên mặt. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Đậu Mùa Khỉ",
+    "Question": "Tôi đang cảm thấy sốt, đau đầu dữ dội và nổi hạch. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Đậu Mùa",
+    "Question": "Tôi đang cảm thấy sốt cao, đau đầu dữ dội và tiêu chảy. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bệnh Động Kinh",
+    "Question": "Tôi hay bị co giật một phần cơ thể, kèm theo cảm giác lo lắng và sợ hãi không rõ nguyên nhân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bụi Phổi Silic",
+    "Question": "Tôi hiện đang có triệu chứng ho dai dẳng và thỉnh thoảng kèm theo đờm. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Bụi Phổi",
+    "Question": "Tôi hiện đang có các triệu chứng như ho khan kéo dài và cảm giác đau nhói ở ngực. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Chuyển Dạ Kéo Dài",
+    "Question": "Tôi hiện đang có các triệu chứng như chuyển dạ hơn 18 giờ, kiệt sức và đau lưng dữ dội. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Chuyển Dạ Đình Trệ",
+    "Question": "Tôi hiện đang có các triệu chứng như tử cung co bóp liên tục nhưng thai không lọt, bướu huyết thanh, chồng khớp sọ. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Chuyển Phôi Thất Bại",
+    "Question": "Tôi hiện đang có các triệu chứng như đau bụng và buồn nôn sau khi chuyển phôi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Chàm Đồng Tiền",
+    "Question": "Tôi thấy da nổi mẩn đỏ, ngứa ngáy và có mụn nước. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Chóng Mặt Khi Nằm Xuống Giường",
+    "Question": "Tôi hiện đang có các triệu chứng như chóng mặt và choáng váng khi nằm xuống hoặc thay đổi tư thế đầu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Chóng Mặt Tư Thế Kịch Phát Lành Tính",
+    "Question": "Tôi đang cảm thấy chóng mặt, mọi thứ xung quanh xoay tròn khi tôi thay đổi tư thế nằm sang ngồi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Chóng Mặt",
+    "Question": "Tôi đang cảm thấy choáng váng và mọi thứ xung quanh như đang xoay tròn khi tôi đứng dậy quá nhanh. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Chướng Bụng Đầy Hơi",
+    "Question": "Tôi hiện đang có các triệu chứng như cảm giác căng tức, đau bụng và bụng sưng to. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Chấn Thương Sọ Não",
+    "Question": "Tôi hiện đang có các triệu chứng như đau đầu, buồn nôn và chóng mặt sau khi bị ngã. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Chậm Kinh",
+    "Question": "Tôi bị trễ kinh 2 tuần, kèm theo đau bụng dưới. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Còi Xương",
+    "Question": "Tôi hiện đang có các triệu chứng như chán ăn, suy dinh dưỡng và xương phát triển chậm. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Còn Ống Động Mạch",
+    "Question": "Tôi hay bị đổ mồ hôi khi khóc hoặc ăn, và thở nhanh hơn bình thường. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Cúm A H5N1",
+    "Question": "Tôi đang sốt cao trên 38 độ, kèm theo ho và đau rát họng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Cơn Gò Chuyển Dạ Giả",
+    "Question": "Tôi hiện đang có các triệu chứng như bụng dưới thắt chặt, cảm giác như chuột rút khi đến kỳ kinh nguyệt. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Cường Giáp",
+    "Question": "Tôi hiện đang có các triệu chứng như sợ nóng, da nóng, tăng tiết mồ hôi và sốt nhẹ. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Cận Thị",
+    "Question": "Tôi hay nheo mắt khi nhìn xa và cảm thấy mỏi mắt khi tập trung nhìn một chỗ lâu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Cứng Khớp",
+    "Question": "Tôi hiện đang có các triệu chứng như khó cử động các khớp, đặc biệt là vào buổi sáng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Dây Rốn Bám Màng",
+    "Question": "Tôi đang mang thai ở tháng thứ 5 và bị chảy máu âm đạo. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Dương Vật Cong",
+    "Question": "Tôi hiện đang có các triệu chứng như có khối u cứng trên trục dương vật và dương vật cong khi cương cứng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Dậy Thì Sớm",
+    "Question": "Con gái tôi mới 7 tuổi nhưng ngực đã bắt đầu phát triển. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Dị Vật Trong Mắt",
+    "Question": "Tôi hiện đang có các triệu chứng như đau nhói trong mắt, cảm giác có dị vật. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Dị Ứng Mắt",
+    "Question": "Tôi hiện đang có các triệu chứng như mắt đỏ, ngứa và chảy nước mắt. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Gai Cột Sống",
+    "Question": "Tôi hiện đang có các triệu chứng như đau vai gáy, lan xuống cánh tay và tê tay. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Gai Xương",
+    "Question": "Tôi hiện đang có các triệu chứng như đau vai, khó cử động cánh tay. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Gan Nhiễm Mỡ Độ 1",
+    "Question": "Tôi hiện đang có các triệu chứng như mệt mỏi, chán ăn và buồn nôn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Gan Nhiễm Mỡ Độ 2",
+    "Question": "Tôi hiện đang có các triệu chứng như chán ăn, mệt mỏi và đau tức vùng gan. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Gan Nhiễm Mỡ Độ 3",
+    "Question": "Tôi cảm thấy mệt mỏi, chán ăn và đau tức hạ sườn phải. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Gan Nhiễm Mỡ",
+    "Question": "Tôi hiện đang có các triệu chứng như đau bụng, chán ăn và vàng da. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Gan To",
+    "Question": "Tôi đang cảm thấy mệt mỏi, vàng da và vàng mắt. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Giun Xoắn",
+    "Question": "Tôi đang bị đau bụng, tiêu chảy và mệt mỏi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Giãn Phế Quản",
+    "Question": "Tôi hay ho và khạc đờm kéo dài nhiều năm, đờm có màu vàng hoặc xanh. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Giãn Tĩnh Mạch Thừng Tinh",
+    "Question": "Tôi hiện đang có cảm giác nặng ở vùng bìu, đặc biệt là sau khi đứng lâu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Hen Suyễn",
+    "Question": "Tôi hiện đang có các triệu chứng như ho khan, khó thở, đặc biệt là vào ban đêm hoặc khi thời tiết thay đổi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Herpes Sinh Dục",
+    "Question": "Tôi hiện đang có các triệu chứng như mụn rộp ở vùng âm đạo và đau nhức cơ thể. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Herpes",
+    "Question": "Tôi hiện đang có các triệu chứng như sưng hạch bạch huyết và đau nhức toàn thân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Hiếm Muộn",
+    "Question": "Tôi hiện đang có các triệu chứng như kinh nguyệt thất thường và thay đổi về ham muốn tình dục. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "HPV",
+    "Question": "Tôi thấy xuất hiện các nốt sùi, không đau ở bộ phận sinh dục. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Hạ Đường Huyết",
+    "Question": "Tôi hiện đang cảm thấy tim đập nhanh, đổ mồ hôi, lo lắng và run rẩy. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Hạt Tophi",
+    "Question": "Tôi hiện đang có các hạt nhỏ nổi lên dưới da, hình tròn hoặc ovan, đôi khi thấy màu trắng bên trong. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Hạt Xơ Dây Thanh Quảng",
+    "Question": "Tôi hiện đang bị khàn tiếng và mất tiếng, đôi khi có cảm giác vướng víu ở cổ họng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Hậu Môn Bị Sưng",
+    "Question": "Tôi hiện đang có các triệu chứng như sưng hậu môn, cảm giác nóng rát và đau buốt khi đi vệ sinh. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Hẹp Bao Quy Đầu",
+    "Question": "Tôi năm nay 18 tuổi và bao quy đầu của tôi vẫn không thể tuột xuống được. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Hẹp Khe Khớp Gối",
+    "Question": "Tôi bị đau âm ỉ ở khớp gối và cơn đau tăng lên khi leo cầu thang. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Hẹp Mạch Vành",
+    "Question": "Tôi thường xuyên bị đau ngực khi chạy bộ và cảm giác này biến mất khi tôi nghỉ ngơi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Hẹp Van Hai Lá",
+    "Question": "Tôi hiện đang có các triệu chứng như khó thở khi gắng sức và mệt mỏi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Hẹp Van Động Mạch Chủ",
+    "Question": "Tôi hay bị đau ngực và khó thở khi chơi thể thao. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Hẹp Van Động Mạch Phổi",
+    "Question": "Tôi hiện đang có các triệu chứng như khó thở và đau ngực. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Hẹp Động Mạch Cảnh",
+    "Question": "Tôi đột nhiên bị tê yếu tay chân một bên và khó nói nhưng sau đó lại hết. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Hội Chứng Brugada",
+    "Question": "Tôi hay bị hồi hộp và rối loạn nhịp tim. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Hội Chứng Fournier",
+    "Question": "Tôi đang cảm thấy đau đớn đột ngột ở vùng sinh dục và da chuyển sang màu tím đỏ. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Hội Chứng HELLP",
+    "Question": "Tôi hiện đang mang thai và cảm thấy mệt mỏi, buồn nôn và đau vùng bụng trên bên phải. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Hội Chứng Kallmann",
+    "Question": "Tôi không thể ngửi thấy mùi gì cả. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Hội Chứng Klinefelter",
+    "Question": "Con trai tôi chậm phát triển vận động và trí tuệ, tinh hoàn không xuống bìu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Hội Chứng Lối Thoát Lồng Ngực",
+    "Question": "Tôi hiện đang có các triệu chứng như đau hoặc yếu ở vai và cánh tay, ngứa ran hoặc khó chịu ở các ngón tay. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Hội Chứng Mông Chết",
+    "Question": "Tôi hiện đang có các triệu chứng như cảm giác tê tê hoặc hơi đau ở mông khi ngồi lâu, nhưng khi đứng dậy di chuyển thì cảm giác này biến mất. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Hội Chứng Ruột Kích Thích",
+    "Question": "Tôi hiện đang có các triệu chứng như đau bụng tái phát liên quan đến việc đi tiêu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Hội Chứng Stevens Johnson",
+    "Question": "Tôi hiện đang có các triệu chứng như nốt lở loét ở mắt, mũi, miệng, họng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Hội Chứng Sudeck",
+    "Question": "Tôi bị đau nhức, sưng tấy và da căng bóng ở vùng bàn tay sau khi bị chấn thương. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Hội Chứng Suy Giảm Miễn Dịch",
+    "Question": "Tôi hay bị cảm lạnh, viêm xoang, tưa miệng và viêm phổi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Hội Chứng Swyer",
+    "Question": "Tôi là nữ, có bộ phận sinh dục nữ bình thường nhưng lại không có kinh nguyệt và dậy thì muộn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Hội Chứng Thận Hư",
+    "Question": "Tôi bị sưng phù quanh mắt, mắt cá chân và bàn chân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Hội Chứng Ống Cổ Tay",
+    "Question": "Tôi hiện đang có các triệu chứng như tê bì tay chân, dị cảm, đau buốt do kim châm hoặc rát bỏng ở vùng da thuộc chi phối của dây thần kinh giữa. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Hở Van 2 Lá",
+    "Question": "Tôi hay bị mệt mỏi, khó thở khi gắng sức và hồi hộp đánh trống ngực. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Hở Van Tim 3 Lá",
+    "Question": "Tôi hay bị khó thở khi nằm hoặc gắng sức. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Insulinoma",
+    "Question": "Tôi hay bị choáng váng, mệt lả, run rẩy và đổ mồ hôi khi đói bụng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Khàn Tiếng",
+    "Question": "Tôi hay bị khàn tiếng sau khi hát karaoke. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Khí Phế Thũng",
+    "Question": "Tôi hay bị khó thở khi vận động nhẹ. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Khó Thở",
+    "Question": "Tôi hiện đang có các triệu chứng như cảm thấy ngột ngạt hoặc ngạt thở. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Khô Khớp",
+    "Question": "Tôi hiện đang có các triệu chứng như đau khớp khi vận động. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Khô Âm Đạo",
+    "Question": "Tôi hiện đang có các triệu chứng như ngứa ngáy và viêm nhiễm âm đạo. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Không Có Tinh Trùng",
+    "Question": "Tôi hiện đang có các triệu chứng như ít có ham muốn tình dục. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Liệt Dây Thanh Quản",
+    "Question": "Tôi hiện đang có các triệu chứng như giọng nói khàn đặc, yếu ớt, và khó nghe. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Liệt Mặt",
+    "Question": "Tôi hiện đang có các triệu chứng như khô mắt, sụp mí, và khó mỉm cười. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Loãng Xương",
+    "Question": "Tôi hiện đang có các triệu chứng như đau nhức đầu xương, mỏi dọc các xương dài, và đau âm ỉ kéo dài. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Loạn Thị",
+    "Question": "Tôi hiện đang có các triệu chứng như mờ mắt và nhìn thấy quầng sáng xung quanh đèn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Lupus Ban Đỏ Dạng Đĩa",
+    "Question": "Tôi hiện đang có các triệu chứng như mảng da đỏ, thô ráp và hình tròn trên cổ. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Lupus Ban Đỏ Hệ Thống",
+    "Question": "Tôi hiện đang có các triệu chứng như đau khớp, mệt mỏi và sốt nhẹ. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Lõm Ngực Bẩm Sinh",
+    "Question": "Tôi hiện đang có các triệu chứng như xuất hiện vết lõm nhẹ ở ngực. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Lẹo Mắt",
+    "Question": "Tôi hiện đang có các triệu chứng như mụn mủ nhỏ màu vàng nhạt ở gốc lông mi và xung huyết xung quanh. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Lệch Vách Ngăn Mũi",
+    "Question": "Tôi hiện đang có các triệu chứng như nghẹt mũi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Lỗ Tiểu Lệch Thấp",
+    "Question": "Tôi hiện đang có các triệu chứng như lỗ tiểu nằm thấp hơn bình thường và tia nước tiểu bị lệch xuống dưới. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Lỵ Amip",
+    "Question": "Tôi hiện đang có các triệu chứng như đau bụng, tiêu chảy và phân lỏng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Mang Thai Ngoài Tử Cung",
+    "Question": "Tôi hiện đang có các triệu chứng như trễ kinh, đau bụng dưới và chảy máu âm đạo bất thường. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Metapneumovirus",
+    "Question": "Tôi hiện đang có các triệu chứng như ho, nghẹt mũi, sổ mũi và rát họng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Mô Vú Dày Đặc",
+    "Question": "Tôi hiện đang có các triệu chứng như mô vú dày đặc không đồng nhất. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Mất Cân Bằng Nội Tiết Tố",
+    "Question": "Tôi hiện đang có các triệu chứng như da khô, tóc khô và móng dễ gãy. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Mất Ngủ Kéo Dài",
+    "Question": "Tôi hiện đang có các triệu chứng như đau đầu về đêm và khó đi vào giấc ngủ. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Mất Ngủ Sau Sinh",
+    "Question": "Tôi hiện đang có các triệu chứng như khó ngủ vào ban đêm và thức dậy nhiều lần trong đêm. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Mất Ngủ",
+    "Question": "Tôi hiện đang có các triệu chứng như khó ngủ vào ban đêm và dễ tỉnh giấc. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Mề Đay",
+    "Question": "Tôi hiện đang có các triệu chứng như nổi mẩn đỏ, ngứa ngáy khắp người. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Mộng Mắt",
+    "Question": "Tôi hiện đang có một mảng nhỏ màu hồng hơi nhô trên mắt. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Mỡ Máu Cao",
+    "Question": "Tôi hiện đang có các triệu chứng như xuất hiện các khối u hoặc nếp nhăn màu vàng ở bên dưới lớp da. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Mụn Bọc",
+    "Question": "Tôi hiện đang có các triệu chứng như nổi mụn sưng đỏ, cứng, có mủ trắng ở mặt. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Mụn Cám",
+    "Question": "Tôi hiện đang có các triệu chứng như da sần sùi, thô ráp với những nốt nhỏ li ti màu trắng hoặc vàng ở mũi và cằm. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Mụn Cóc Phẳng",
+    "Question": "Tôi hiện đang có các triệu chứng như da xuất hiện các nốt mụn nhỏ, phẳng, màu hồng hoặc nâu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Mụn Cóc Ở Chân",
+    "Question": "Tôi hiện đang có các triệu chứng như da chân xuất hiện nốt sần sùi, màu nâu hoặc đen, gây đau khi đi lại. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Mụn Cóc Ở Tay",
+    "Question": "Tôi hiện đang có các triệu chứng như da tay xuất hiện nốt sần sùi, màu xám, hơi cứng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Mụn Cóc",
+    "Question": "Tôi hiện đang có các triệu chứng như da xuất hiện nốt sần sùi, màu da hoặc xám trắng, có hình dạng như súp lơ. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Mụn Nội Tiết",
+    "Question": "Tôi hiện đang có các triệu chứng như mụn đầu trắng, đầu đen, mụn mủ và nốt sần trên mặt. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Mụn Trứng Cá Tuổi Dậy Thì",
+    "Question": "Tôi hiện đang có các triệu chứng như bít tắc lỗ chân lông, xuất hiện mụn nhọt, mụn đầu đen, mụn đầu trắng ở mặt. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Mụn Trứng Cá Ở Cằm",
+    "Question": "Tôi hiện đang có các triệu chứng như mụn đầu trắng nằm trong lỗ chân lông ở cằm. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Mụn Trứng Cá Ở Lưng",
+    "Question": "Tôi hiện đang có các triệu chứng như nổi mụn trứng cá dọc theo vai và vùng lưng trên. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Mụn Trứng Cá",
+    "Question": "Tôi hiện đang có các triệu chứng như mụn đầu trắng và mụn đầu đen trên mặt. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Mụn Ẩn",
+    "Question": "Tôi hiện đang có các triệu chứng như phát hiện một nốt li ti dưới da, cảm giác hơi đau, khó chịu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Nang Cơ Năng Buồng Trứng",
+    "Question": "Tôi hiện đang có các triệu chứng như cảm giác đầy bụng và đau âm ỉ ở vùng chậu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Nang Vú",
+    "Question": "Tôi hiện đang có các triệu chứng như một khối tròn trong vú, dễ di chuyển và bề mặt trơn láng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Nang Đơn Thận",
+    "Question": "Tôi hiện đang có các triệu chứng như đau bụng trên và đau lưng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Nghe Kém Một Bên Tai",
+    "Question": "Tôi hiện đang có các triệu chứng như nghe kém một bên tai. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Nghe Kém",
+    "Question": "Tôi hiện đang có các triệu chứng như cảm thấy tiếng nói nhỏ lại và khó hiểu lời người khác nói. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ngoại Tâm Thu Thất",
+    "Question": "Tôi hay cảm thấy hụt nhịp và đánh trống ngực. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ngưng Thở Khi Ngủ",
+    "Question": "Tôi hiện đang có các triệu chứng như ngủ ngày quá nhiều, ngáy to và thường xuyên thức giấc giữa đêm. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ngộ Độc Botulinum",
+    "Question": "Tôi hiện đang có các triệu chứng như sụp mí mắt, chảy nước dãi và tiếng khóc yếu ớt (Tôi). Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ngộ Độc Thuốc Diệt Chuột",
+    "Question": "Tôi hiện đang có các triệu chứng như viêm ruột cấp tính và rụng tóc. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ngộ Độc Thực Phẩm",
+    "Question": "Tôi hiện đang có các triệu chứng như đau bụng dữ dội và nôn mửa. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ngủ Ngáy",
+    "Question": "Tôi hay tạo ra âm thanh rung, lạch cạch khi thở lúc ngủ. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ngứa Hậu Môn",
+    "Question": "Tôi hay bị ngứa ngáy và nóng rát vùng hậu môn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Nhau Bong Non",
+    "Question": "Tôi đang mang thai và bị chảy máu âm đạo. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Nhau Bám Thấp",
+    "Question": "Tôi đang mang thai 3 tháng cuối và bị chảy máu âm đạo đột ngột. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Nhau Tiền Đạo",
+    "Question": "Tôi hiện đang có các triệu chứng như xuất huyết âm đạo bất thường với máu có màu đỏ tươi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Nhiễm Khuẩn H",
+    "Question": "Tôi hiện đang có các triệu chứng như đau hoặc khó chịu ở bụng trên. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Nhiễm Khuẩn Đường Tiết Niệu",
+    "Question": "Tôi hiện đang có các triệu chứng như nóng rát khi đi tiểu và tăng tần suất đi tiểu mà không tiểu được nhiều. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Nhiễm Ký Sinh Trùng",
+    "Question": "Tôi hiện đang có các triệu chứng như sốt kéo dài, có thể sốt cao kèm cơ thể rét run. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Nhiễm Toan Ceton",
+    "Question": "Tôi hiện đang có các triệu chứng như khát nước và đi tiểu thường xuyên. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Nhiễm Trùng Bàn Chân Tiểu Đường",
+    "Question": "Tôi hiện đang có vết thương ở bàn chân bị đỏ và lan rộng, kèm theo đau và nhạy cảm. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Nhiễm Trùng Hậu Sản",
+    "Question": "Tôi hiện đang có các triệu chứng như đau hạ vị, sốt nhẹ và sản dịch có mùi hôi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Nhiễm Trùng Đường Ruột",
+    "Question": "Tôi hiện đang có các triệu chứng như đau bụng, tiêu chảy và buồn nôn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Nhiễm Vi Khuẩn Salmonella",
+    "Question": "Tôi hiện đang có các triệu chứng như tiêu chảy và đau quặn bụng sau khi ăn thịt sống. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Nhiễm Ấu Trùng Sán Dây Lợn",
+    "Question": "Tôi hiện đang có các triệu chứng như đau cơ, nốt dưới da có thể sờ thấy được. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Nhân Tuyến Giáp",
+    "Question": "Tôi tình cờ phát hiện có khối u ở vùng cổ khi soi gương. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Nhịp Nhanh Nhĩ",
+    "Question": "Tôi hay bị hồi hộp và tim đập nhanh đột ngột. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Nhịp Nhanh Thất",
+    "Question": "Tôi hiện đang có các triệu chứng như chóng mặt, lâng lâng và tim đập nhanh. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Nhồi Máu Cơ Tim Không ST Chênh Lên",
+    "Question": "Tôi hiện đang có các triệu chứng như đau ngực và khó thở. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Nhồi Máu Cơ Tim Thất Phải",
+    "Question": "Tôi hiện đang có các triệu chứng như đau ngực, khó thở và buồn nôn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Nhồi Máu Não",
+    "Question": "Tôi hiện đang có các triệu chứng như liệt mặt, miệng méo và nhân trung lệch sang một bên. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Nám Da",
+    "Question": "Tôi hiện đang có các triệu chứng như da xuất hiện những mảng sẫm màu ở hai bên má và trán, đặc biệt là sau khi tiếp xúc với ánh nắng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Nám Nội Tiết",
+    "Question": "Tôi hiện đang có các triệu chứng như da xuất hiện các đốm nhỏ màu vàng nhạt ở hai bên gò má và trán. Chu kỳ kinh nguyệt của tôi cũng không đều. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Não Úng Thủy",
+    "Question": "Tôi hiện đang có các triệu chứng như đầu to bất thường và da đầu mỏng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Nóng Gan",
+    "Question": "Tôi hiện đang có các triệu chứng như chán ăn, mệt mỏi và đau tức vùng gan. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Nấm Ống Tai Ngoài",
+    "Question": "Tôi hiện đang có các triệu chứng như ngứa tai và chảy dịch tai có mùi hôi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Nốt Ruồi",
+    "Question": "Tôi hiện đang có một nốt ruồi màu nâu, hình tròn, đường kính nhỏ hơn 6mm. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Nứt Kẽ Hậu Môn",
+    "Question": "Tôi hiện đang có các triệu chứng như đau nhói khi đi đại tiện và có máu trong phân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Nữ Hóa Tuyến Vú",
+    "Question": "Tôi hiện đang có các triệu chứng như ngực to hơn bình thường và đau ngực. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Omicron Tàng Hình",
+    "Question": "Tôi hiện đang có các triệu chứng như sốt nhẹ và ho khan. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Phát Ban Ở Ngực",
+    "Question": "Tôi thấy da vùng ngực bị đỏ, ngứa và đau. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Phì Đại Tuyến Tiền Liệt",
+    "Question": "Tôi hiện đang có các triệu chứng như tiểu nhiều lần trong đêm và cảm giác mót tiểu liên tục. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Phì Đại Tuyến Vú",
+    "Question": "Tôi hiện đang có các triệu chứng như núm vú to ra và sờ thấy có nhân cứng ở chính giữa. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Phù Mạch Bạch Huyết Cánh Tay",
+    "Question": "Tôi hiện đang có các triệu chứng như sưng một phần cánh tay và đau thắt. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Phế Cầu Khuẩn",
+    "Question": "Tôi đang bị sốt cao, rét run, ho có đờm và đau ngực. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Polyp Dây Thanh Quản",
+    "Question": "Tôi hiện đang có các triệu chứng như khàn tiếng và mất hơi khi nói. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Polyp Dạ Dày",
+    "Question": "Tôi hiện đang có các triệu chứng như ợ nóng và cảm thấy no nhanh, mặc dù tôi chỉ ăn một lượng nhỏ. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Polyp Hậu Môn",
+    "Question": "Tôi hiện đang có các triệu chứng như khối sa hậu môn sau đại tiện và đau bụng quặn từng cơn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Polyp Trực Tràng",
+    "Question": "Tôi hiện đang có các triệu chứng như đi ngoài ra máu, sa ra ngoài khi đi tiêu và tắc ruột. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Polyp Đại Tràng",
+    "Question": "Tôi hiện đang có các triệu chứng như chảy máu trực tràng và đau bụng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Protein Niệu",
+    "Question": "Tôi hiện đang có các triệu chứng như sưng ở mặt, bụng, bàn chân hoặc mắt cá chân, đi tiểu thường xuyên và hụt hơi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ra Mồ Hôi Tay Chân Nhiều",
+    "Question": "Tôi hiện đang có các triệu chứng như ra mồ hôi nhiều ở nách, thấm ướt đẫm áo buộc phải thay áo vài lần trong ngày. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Rau Bám Mép",
+    "Question": "Tôi hiện đang mang thai và có các triệu chứng như chảy máu âm đạo bất thường, có thể là máu tươi hoặc máu cục nhưng không hề gây đau đớn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Rau Cài Răng Lược",
+    "Question": "Tôi đang mang thai ở tháng cuối và bị xuất huyết âm đạo bất thường, không đau. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Rau Tiền Đạo",
+    "Question": "Tôi hiện đang có các triệu chứng như xuất huyết âm đạo bất thường với máu đỏ tươi, không đau ở tam cá nguyệt thứ ba. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Rong Kinh Tiền Mãn Kinh",
+    "Question": "Tôi hiện đang có các triệu chứng như thời gian hành kinh kéo dài trên 7 ngày và lượng máu kinh ra nhiều. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Rong Kinh",
+    "Question": "Tôi hiện đang có các triệu chứng như đau bụng kinh kéo dài, lượng máu kinh ra nhiều và xuất hiện cục máu đông có kích thước lớn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Rung Nhĩ",
+    "Question": "Tôi hiện đang có các triệu chứng như hồi hộp, đánh trống ngực. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Rò Hậu Môn",
+    "Question": "Tôi hiện đang có các triệu chứng như đau và sưng quanh hậu môn, tiết dịch hôi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Rò Luân Nhĩ",
+    "Question": "Tôi hiện đang có các triệu chứng như sưng đau, có dịch mủ ở khu vực tai ngoài và thấy một lỗ nhỏ ngay giữa phần sưng đau. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Rối Loạn Chuyển Hóa Bẩm Sinh",
+    "Question": "Tôi hiện đang có các triệu chứng như mệt mỏi, lờ đờ, chán ăn, bỏ bú. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Rối Loạn Cương Dương",
+    "Question": "Tôi hiện đang có các triệu chứng như dương vật mềm, khó cương cứng dù có ham muốn tình dục. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Rối Loạn Giấc Ngủ",
+    "Question": "Tôi hay bị buồn ngủ vào ban ngày và khó ngủ vào ban đêm. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Rối Loạn Giọng Nói",
+    "Question": "Tôi hay bị khàn giọng và mất giọng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Rối Loạn Kinh Nguyệt",
+    "Question": "Tôi hay bị mất kinh và chu kỳ kinh nguyệt không đều. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Rối Loạn Lipid Máu",
+    "Question": "Tôi hiện đang có các triệu chứng như tức ngực và khó thở. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Rối Loạn Lo Âu Lan Tỏa",
+    "Question": "Tôi hiện đang có các triệu chứng như lo lắng quá mức về những việc nhỏ nhặt và khó tập trung. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Rối Loạn Lo Âu",
+    "Question": "Tôi hay cảm thấy lo lắng và sợ hãi quá mức. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Rối Loạn Lưỡng Cực",
+    "Question": "Tôi hiện đang có các triệu chứng như tràn đầy năng lượng, nói nhiều, và đưa ra quyết định liều lĩnh. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Rối Loạn Nhịp Tim Chậm",
+    "Question": "Tôi hiện đang có các triệu chứng như choáng váng và chóng mặt. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Rối Loạn Nhịp Tim",
+    "Question": "Tôi hiện đang có các triệu chứng như hồi hộp, đánh trống ngực, và hụt hơi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Rối Loạn Nội Tiết Tố Sau Sinh",
+    "Question": "Tôi hiện đang có các triệu chứng như mệt mỏi sau khi sinh con. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Rối Loạn Nội Tiết",
+    "Question": "Tôi hiện đang có các triệu chứng như sụt cân, khát nhiều, uống nhiều, và tiểu nhiều. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Rối Loạn Phân Ly",
+    "Question": "Tôi hiện đang có các triệu chứng như cảm thấy không làm chủ được cảm xúc của mình. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Rối Loạn Sàn Chậu",
+    "Question": "Tôi hiện đang có các triệu chứng như són tiểu sau khi sinh con. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Rối Loạn Tiêu Hóa",
+    "Question": "Tôi hiện đang có các triệu chứng như đau bụng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Rối Loạn Tiền Đình",
+    "Question": "Tôi hiện đang có các triệu chứng như chóng mặt thoáng qua khi thay đổi tư thế, ví dụ như từ nằm chuyển sang ngồi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Rụng Tóc",
+    "Question": "Tôi hiện đang có các triệu chứng như tóc mỏng dần trên đỉnh đầu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Sa Sút Trí Tuệ",
+    "Question": "Tôi hay quên và không rõ ngày tháng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Sa Tinh Hoàn",
+    "Question": "Tôi hiện đang có các triệu chứng như sốt cao, đau nhức, sưng tấy ở tinh hoàn và bìu giãn ra. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Sa Trực Tràng",
+    "Question": "Tôi hay cảm thấy có một khối u sa ra khỏi hậu môn trong khi đi tiêu và có thể dùng tay đẩy ngược vào bên trong. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Sa Tạng Chậu",
+    "Question": "Tôi hiện đang có các triệu chứng như căng tức và nặng ở vùng bụng dưới, vùng chậu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Sa Tử Cung Khi Mang Thai",
+    "Question": "Tôi hiện đang mang thai và cảm thấy nặng bụng dưới, âm đạo và âm hộ có cảm giác nặng nề, kèm theo đau lưng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Sa Tử Cung",
+    "Question": "Tôi hay cảm thấy nặng nề hoặc áp lực trong vùng chậu và nhìn thấy khối phồng ở âm đạo. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Sinh Non",
+    "Question": "Tôi hiện đang mang thai ở tuần thứ 28 và có các triệu chứng như đau lưng âm ỉ, em bé có dấu hiệu đẩy về phía dưới. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Suy Buồng Trứng Sớm",
+    "Question": "Tôi hiện đang có các triệu chứng như rối loạn kinh nguyệt và mất ngủ. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Suy Gan Cấp",
+    "Question": "Tôi hiện đang có các triệu chứng như vàng da, đau bụng và phù chân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Suy Gan Mãn Tính",
+    "Question": "Tôi hiện đang có các triệu chứng như cơ thể mệt mỏi và sốt nhẹ. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Suy Gan",
+    "Question": "Tôi hiện đang có các triệu chứng như mệt mỏi, buồn nôn và chán ăn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Suy Giãn Tĩnh Mạch Chi Dưới",
+    "Question": "Tôi hiện đang có các triệu chứng như phù chân và bụng to. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Suy Giãn Tĩnh Mạch Sau Chi Dưới",
+    "Question": "Tôi hiện đang có các triệu chứng như nặng mỏi chân và đau chân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Suy Giảm Testosterone",
+    "Question": "Tôi hiện đang có các triệu chứng như giảm ham muốn tình dục. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Suy Hô Hấp",
+    "Question": "Tôi hiện đang có các triệu chứng như khó thở và thở nhanh. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Suy Thận Cấp",
+    "Question": "Tôi hiện đang có các triệu chứng như giảm lượng nước tiểu bất thường. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Suy Thận Mạn",
+    "Question": "Tôi hiện đang có các triệu chứng như buồn nôn, nôn mửa và ăn uống kém ngon miệng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Suy Thận",
+    "Question": "Tôi hiện đang có các triệu chứng như giảm lượng nước tiểu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Suy Tim Giai Đoạn Cuối",
+    "Question": "Tôi hiện đang có các triệu chứng như khó thở, ho khan và phù nề tay chân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Suy Tim Mãn Tính",
+    "Question": "Tôi hiện đang có các triệu chứng như khó thở khi hoạt động hoặc khi nằm thẳng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Suy Tim Mất Bù",
+    "Question": "Tôi hiện đang có các triệu chứng như khó thở và tức ngực khi hít thở sâu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Suy Tim Phải",
+    "Question": "Tôi hiện đang bị sưng phù ở bàn chân và mắt cá chân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Suy Tim Sung Huyết",
+    "Question": "Tôi hiện đang có các triệu chứng như mệt mỏi và sưng phù ở mắt cá chân, bàn chân và cẳng chân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Suy Tim Trái",
+    "Question": "Tôi hiện đang có các triệu chứng như đau ngực và mệt mỏi, yếu sức. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Suy Tim",
+    "Question": "Tôi hiện đang có các triệu chứng như khó thở, mệt mỏi và sưng chân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Suy Tuyến Thượng Thận",
+    "Question": "Tôi đang cảm thấy mệt mỏi, chóng mặt, sụt cân không rõ nguyên nhân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Suy Tĩnh Mạch Mạn Tính",
+    "Question": "Tôi đang cảm thấy chân sưng phù, nặng nề, đặc biệt là vùng cẳng chân và mắt cá chân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Sán Lá Phổi",
+    "Question": "Tôi hiện đang có các triệu chứng như tiêu chảy và đau bụng sau khi ăn tôm cua. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Sán Lợn Gạo",
+    "Question": "Tôi hiện đang có các triệu chứng như đau bụng và tiêu chảy từng đợt. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Són Tiểu",
+    "Question": "Tôi hiện đang có các triệu chứng như rò rỉ nước tiểu khi ho, hắt hơi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Sùi Mào Gà Ở Nữ",
+    "Question": "Tôi hiện đang có các triệu chứng như nổi mụn cóc sinh dục ở âm hộ. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Sùi Mào Gà",
+    "Question": "Tôi hiện đang có các triệu chứng như nổi mụn cóc sinh dục ở dương vật. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Sản Giật",
+    "Question": "Tôi hiện đang có các triệu chứng như huyết áp tăng cao và sưng phù ở mặt, tay, chân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Sẹo Lồi",
+    "Question": "Tôi đang cảm thấy vùng da bị thương của mình nổi gồ ghề, cứng và căng bóng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Sẹo Rỗ",
+    "Question": "Tôi hiện đang có các triệu chứng như da xuất hiện các vết lõm sâu có kích thước, hình dạng không đồng đều trên bề mặt da, đặc biệt là ở vùng má và cằm. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Sỏi Bàng Quang",
+    "Question": "Tôi hiện đang có các triệu chứng như đau bụng dưới, đau khi đi tiểu và đi tiểu thường xuyên. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Sỏi Bùn Túi Mật",
+    "Question": "Tôi hiện đang có các triệu chứng như đau bụng, đặc biệt là bên phải, ngay sau bữa ăn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Sỏi Mật",
+    "Question": "Tôi hiện đang có các triệu chứng như đau đột ngột ở bên phải, ngay dưới xương sườn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Sỏi Niệu Quản",
+    "Question": "Tôi đang cảm thấy đau dữ dội ở vùng hông lưng, lan xuống bẹn. Cơn đau đến đột ngột. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Sỏi Thận",
+    "Question": "Tôi hay bị đau dữ dội ở vùng hông lưng, lan xuống bụng dưới và bẹn. Cơn đau đến đột ngột sau khi vận động mạnh. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Sỏi Tiết Niệu",
+    "Question": "Tôi hiện đang có các triệu chứng như đau lưng bụng hoặc vùng hông. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Sỏi Ống Mật Chủ",
+    "Question": "Tôi bị đau dữ dội ở hạ sườn phải, lan lên vai và lưng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Sốt Rét",
+    "Question": "Tôi hiện đang có các triệu chứng như sốt, ớn lạnh, đau đầu và đau bụng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Sốt Siêu Vi",
+    "Question": "Tôi hiện đang có các triệu chứng như sốt, ho và hắt hơi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Sốt Xuất Huyết",
+    "Question": "Tôi hiện đang có các triệu chứng như sốt cao, đau đầu, đau nhức cơ thể và mệt mỏi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Tai Biến Mạch Máu Não",
+    "Question": "Tôi hiện đang có các triệu chứng như đau đầu, hoa mắt, chóng mặt. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Teo Cơ Do Đái Tháo Đường",
+    "Question": "Tôi hiện đang có các triệu chứng như đau, yếu và teo cơ vùng đùi, hông, mông, chân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Teo Tính Hoàn",
+    "Question": "Tôi hiện đang có các triệu chứng như tinh hoàn bị teo nhỏ lại, giảm ham muốn tình dục. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Thai Lưu",
+    "Question": "Tôi hiện đang có các triệu chứng như không còn cảm nhận thấy thai máy, chảy máu âm đạo và đau bụng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Thay Đổi Sợi Bọc Tuyến Vú",
+    "Question": "Tôi hiện đang có các triệu chứng như đau vú, căng tức và nổi u cục ở vùng trên ngoài tuyến vú. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Thiếu Men G6PD",
+    "Question": "Tôi hiện đang có các triệu chứng như vàng da, vàng mắt và nước tiểu sậm màu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Thiếu Máu Cơ Tim Cục Bộ Mạn Tính",
+    "Question": "Tôi hiện đang có các triệu chứng như đau thắt ngực khi gắng sức, đau lan lên vai và cánh tay trái. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Thiếu Máu Cơ Tim",
+    "Question": "Tôi hiện đang có các triệu chứng như đau thắt ngực, khó thở và mệt mỏi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Thiếu Máu Não",
+    "Question": "Tôi hiện đang có các triệu chứng như đau đầu, ù tai và chóng mặt thoáng qua. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Thoái Hóa Khớp Cổ Chân",
+    "Question": "Tôi hiện đang có các triệu chứng như đau nhức vùng cổ chân, tăng đau khi đi bộ và giảm khi nghỉ ngơi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Thoái Hóa Khớp Cổ Tay",
+    "Question": "Tôi hiện đang có các triệu chứng như đau nhức cổ tay, tăng đau khi vận động và giảm khi nghỉ ngơi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Thoái Hóa Khớp",
+    "Question": "Tôi hiện đang có các triệu chứng như đau nhức khớp, tăng đau khi vận động và giảm khi nghỉ ngơi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Thoát Vị Khe Hoành",
+    "Question": "Tôi hiện đang có các triệu chứng như ợ nóng, ợ chua và đau rát sau xương ức. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Thuyên Tắc Ối",
+    "Question": "Tôi đang chuyển dạ và đột nhiên khó thở, tím tái. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Thông Liên Nhĩ",
+    "Question": "Tôi dễ mệt mỏi và thở nhanh. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Thông Liên Thất",
+    "Question": "Con tôi ăn uống kém, không tăng cân. Con tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Thận Đa Nang",
+    "Question": "Tôi hiện đang có các triệu chứng như đau lưng, đau hông và huyết áp cao. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Thừa Estrogen",
+    "Question": "Tôi đang cảm thấy sưng, đau ở ngực và có khối u xơ trong vú. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Tim Đập Nhanh",
+    "Question": "Tôi hiện đang có các triệu chứng như tim đập nhanh, chóng mặt và hụt hơi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Tinh Hoàn Lạc Chỗ",
+    "Question": "Tôi sinh non và nhẹ cân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Tinh Hoàn Ẩn",
+    "Question": "Tôi bị rối loạn nội tiết tố và dị tật bẩm sinh. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Tinh Trùng Yếu",
+    "Question": "Tôi xuất tinh dịch loãng và số lượng ít. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Tiêu Chảy",
+    "Question": "Tôi hay bị đi ngoài nhiều lần trong ngày, phân lỏng và toàn nước. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Tiết Dịch Núm Vú",
+    "Question": "Tôi hiện đang có các triệu chứng như tiết dịch núm vú màu trắng đục. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Tiền Sản Giật",
+    "Question": "Tôi hiện đang có các triệu chứng như tăng cân đột ngột, sưng phù mặt và tay chân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Tiền Tiểu Đường",
+    "Question": "Tôi hiện đang có các triệu chứng như uống nhiều nước và đi tiểu nhiều lần. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Tiểu Buốt",
+    "Question": "Tôi hiện đang có các triệu chứng như tiểu buốt, tiểu rắt. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Tiểu Không Tự Chủ",
+    "Question": "Tôi hiện đang có các triệu chứng như són tiểu khi ho, cười và hắt hơi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Tiểu Đêm",
+    "Question": "Tôi hiện đang có các triệu chứng như thức dậy đi tiểu nhiều lần trong đêm. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Tiểu Đường Bị Ngứa Da",
+    "Question": "Tôi hiện đang có các triệu chứng như ngứa da và da khô. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Tiểu Đường Tuýp 1",
+    "Question": "Tôi hiện đang có các triệu chứng như đi tiểu nhiều và khát nước nhiều. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Tiểu Đường Tuýp 2",
+    "Question": "Tôi hiện đang có các triệu chứng như rất khát và đi tiểu nhiều. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Truyền Máu Song Thai",
+    "Question": "Tôi hiện đang có các triệu chứng như bụng to nhanh bất thường khi mang song thai. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Trào Ngược Dạ Dày Thực Quản",
+    "Question": "Tôi hiện đang có các triệu ợ nóng, ợ chua, ợ hơi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Trầm Cảm Sau Sinh",
+    "Question": "Tôi hay khóc lóc và ủ rũ sau khi sinh con. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Trầm Cảm",
+    "Question": "Tôi hay đau nhức không rõ nguyên nhân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Tái Cực Sớm",
+    "Question": "Tôi hiện đang có các triệu chứng như ngất xỉu, choáng váng từng cơn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Táo Bón",
+    "Question": "Tôi hiện đang có các triệu chứng như khó đi đại tiện, phân cứng và đau rát hậu môn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Tê Bì Chân Tay",
+    "Question": "Tôi hiện đang có các triệu chứng như tê bì chân tay, đau nhức xương khớp. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Túi Phình Mạch Máu Não",
+    "Question": "Tôi hiện đang có các triệu chứng như đau đầu dữ dội, buồn nôn và nôn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Túi Thừa Niệu Đạo",
+    "Question": "Tôi hiện đang có các triệu chứng như tiểu khó, tiểu không tự chủ và đau khi quan hệ. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Tăng Acid Uric Máu",
+    "Question": "Tôi hiện đang có các triệu chứng như sưng, nóng, đỏ, đau khớp. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Tăng Huyết Áp Thai Kỳ",
+    "Question": "Tôi hiện đang có các triệu chứng như sưng phù chân tay, tăng cân đột ngột khi mang thai. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Tăng Huyết Áp Vô Căn",
+    "Question": "Tôi hiện đang có các triệu chứng như đau đầu, chóng mặt, mệt mỏi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Tăng Huyết Áp",
+    "Question": "Tôi hiện đang có các triệu chứng như nhức đầu, mỏi gáy, chóng mặt. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Tăng Men Gan",
+    "Question": "Tôi hiện đang có các triệu chứng như ngứa da, đặc biệt là cánh tay dưới. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Tăng Tiết Mồ Hôi",
+    "Question": "Tôi hiện đang có các triệu chứng như đổ mồ hôi quá nhiều ở tay, chân và nách. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Tăng Áp Phổi",
+    "Question": "Tôi hiện đang có các triệu chứng như mệt mỏi, khó thở, đau ngực và phù chân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Tật Khúc Xạ",
+    "Question": "Tôi hay nheo mắt khi đọc sách. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Tắc Mạch Máu Não",
+    "Question": "Tôi đang cảm thấy yếu liệt nửa người, khó cử động tay chân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Tắc Tia Sữa Sau Sinh",
+    "Question": "Tôi hiện đang có các triệu chứng như ngực căng cứng, đau nhức và tiết sữa rất ít. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Tắc Vòi Trứng",
+    "Question": "Tôi hiện đang có các triệu chứng như đau bụng dưới, chu kỳ kinh nguyệt thất thường. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Tắc Ống Dẫn Tinh",
+    "Question": "Tôi đang cảm thấy đau ở vùng bìu và tinh hoàn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Tứ Chứng Fallot",
+    "Question": "Tôi hiện đang có các triệu chứng như da và niêm mạc tím tái. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "U Máu",
+    "Question": "Tôi hiện đang có các triệu chứng như xuất hiện vết bớt đỏ trên da. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "U Mềm Treo",
+    "Question": "Tôi hiện đang có các triệu chứng như xuất hiện các nốt sần trên da, màu đen, nâu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "U Nang Buồng Trứng",
+    "Question": "Tôi hiện đang có các triệu chứng như đau bụng dưới, đau lưng và kinh nguyệt thất thường. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "U Nhú Sinh Dục",
+    "Question": "Tôi hiện đang có các triệu chứng như u nhú sinh dục mọc riêng lẻ hoặc từng chùm nhỏ ở bộ phận sinh dục. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "U Nhầy Xoang Trán",
+    "Question": "Tôi hiện đang có các triệu chứng như đau đầu phía trước, lệch mặt hoặc sưng tấy. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "U Não Lành Tính",
+    "Question": "Tôi hiện đang có các triệu chứng như đau đầu, buồn nôn và nôn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "U Não",
+    "Question": "Tôi hiện đang có các triệu chứng như đau đầu, buồn nôn và nôn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "U Thận Lành Tính",
+    "Question": "Tôi hiện đang có các triệu chứng như tăng huyết áp, tăng nhịp tim bất thường. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "U Trung Thất",
+    "Question": "Tôi hiện đang có các triệu chứng như ho, hụt hơi, đau ngực. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "U Tuy Sống",
+    "Question": "Tôi hiện đang có các triệu chứng như đau cổ hoặc đau lưng kéo dài. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "U Tuyến Giáp",
+    "Question": "Tôi hiện đang có các triệu chứng như khối u ở vùng cổ trước có thể nhìn thấy được. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "U Tuyến Nước Bọt Mang Tai",
+    "Question": "Tôi hiện đang có các triệu chứng như khối sưng vùng góc hàm. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "U Tuyến Tùng",
+    "Question": "Tôi hiện đang có các triệu chứng như đau đầu, buồn nôn, ói mửa, rối loạn nhịp thở. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "U Xơ Tử Cung Khi Mang Thai",
+    "Question": "Tôi hiện đang có các triệu chứng như đau bụng, hoặc tình trạng xuất huyết bất thường, hoặc gặp cả hai triệu chứng trong 3 tháng đầu thai kỳ. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "U Xương",
+    "Question": "Tôi hiện đang có các triệu chứng như đau xương không rõ nguyên nhân, cường độ cơn đau tăng dần theo thời gian. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Biểu Mô Ống Tuyến Vú Tại Chỗ",
+    "Question": "Tôi hiện đang có các triệu chứng như chảy máu núm vú và xuất hiện khối u vú. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Buồng Trứng Giai Đoạn 1",
+    "Question": "Tôi hiện đang có các triệu chứng như đau bụng dưới, sụt cân và chán ăn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Buồng Trứng Giai Đoạn 4",
+    "Question": "Tôi hiện đang có các triệu chứng như đau bụng dưới, sụt cân nhanh chóng và mệt mỏi kéo dài. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Buồng Trứng",
+    "Question": "Tôi hiện đang có các triệu chứng như đau bụng vùng khung chậu, đầy bụng và sụt cân không rõ lý do. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Cổ Tử Cung Giai Đoạn 1",
+    "Question": "Tôi hiện đang có các triệu chứng như ra máu âm đạo bất thường và đau vùng chậu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Cổ Tử Cung Giai Đoạn 2",
+    "Question": "Tôi hiện đang có các triệu chứng như ra máu âm đạo bất thường và đau vùng chậu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Cổ Tử Cung Giai Đoạn Cuối",
+    "Question": "Tôi hiện đang có các triệu chứng như ra máu âm đạo bất thường và đau vùng chậu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Cổ Tử Cung",
+    "Question": "Tôi hiện đang có các triệu chứng như đau rát vùng chậu khi quan hệ tình dục và ra máu bất thường sau khi quan hệ. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Da",
+    "Question": "Tôi hiện đang có các triệu chứng như xuất hiện các nốt ruồi mới trên da. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Dương Vật",
+    "Question": "Tôi hiện đang có các triệu chứng như thay đổi màu sắc da dương vật. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Dạ Dày Di Căn",
+    "Question": "Tôi hiện đang có các triệu chứng như khó chịu, đau bụng trên rốn hoặc bên phải bụng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Dạ Dày Giai Đoạn Cuối",
+    "Question": "Tôi hiện đang có các triệu chứng như rối loạn tiêu hóa, đau bụng dữ dội và xuất huyết dạ dày. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Dạ Dày",
+    "Question": "Tôi hiện đang có các triệu chứng như đau bụng, khó tiêu và buồn nôn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Gan",
+    "Question": "Tôi hiện đang có các triệu chứng như đau hạ sườn phải, vàng da và mệt mỏi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Phổi Không Tế Bào Nhỏ Giai Đoạn 1",
+    "Question": "Tôi hiện đang có các triệu chứng như ho, viêm phế quản kéo dài và đau ngực. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Phổi Không Tế Bào Nhỏ Giai Đoạn 2",
+    "Question": "Tôi hiện đang có các triệu chứng như ho, viêm phế quản kéo dài và đau ngực thường xuyên. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Phổi Không Tế Bào Nhỏ Giai Đoạn 3",
+    "Question": "Tôi hiện đang có các triệu chứng như ho, viêm phế quản kéo dài và đau ngực thường xuyên. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Phổi",
+    "Question": "Tôi hiện đang có các triệu chứng như ho kéo dài, ho có đờm và đau ngực. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Thanh Quản",
+    "Question": "Tôi hiện đang có các triệu chứng như khàn tiếng, ho khan, khó chịu ở họng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Thận",
+    "Question": "Tôi hiện đang có các triệu chứng như đau một bên cơ thể, có khối u ở bụng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Thực Quản",
+    "Question": "Tôi hiện đang có các triệu chứng như nuốt nghẹn, nuốt khó, sụt cân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Tinh Hoàn",
+    "Question": "Tôi hiện đang có các triệu chứng như sưng tinh hoàn, cảm giác nặng nề ở bìu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Tuyến Giáp",
+    "Question": "Tôi hiện đang có các triệu chứng như khó thở, khó nuốt, sưng ở cổ. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Tuyến Tiền Liệt",
+    "Question": "Tôi hiện đang có các triệu chứng như đi tiểu không hết, tia nước tiểu yếu, tiểu đêm nhiều lần. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Vòm Họng Giai Đoạn 0",
+    "Question": "Tôi hiện đang có các triệu chứng như nghẹt mũi, chảy máu mũi và đau tai. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Vòm Họng Giai Đoạn 1",
+    "Question": "Tôi hiện đang có các triệu chứng như nghẹt mũi, chảy máu mũi và đau rát họng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Vòm Họng Giai Đoạn 2",
+    "Question": "Tôi hiện đang có các triệu chứng như nghẹt mũi, đau đầu và ù tai. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Vòm Họng Giai Đoạn 3",
+    "Question": "Tôi hiện đang có các triệu chứng như đau đầu dữ dội, nổi hạch ở cổ và nghẹt mũi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Vòm Họng Giai Đoạn Đầu",
+    "Question": "Tôi hiện đang có các triệu chứng như đau khi nuốt, đau tai, ù tai. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Vòm Họng",
+    "Question": "Tôi hiện đang có các triệu chứng như đau hoặc chảy máu miệng, đau họng và nuốt khó. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Vú Giai Đoạn 0",
+    "Question": "Tôi hiện đang có các triệu chứng như tiết dịch núm vú và da vú dày lên. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Vú Giai Đoạn 1",
+    "Question": "Tôi hiện đang có các triệu chứng như tiết dịch núm vú và da bị lõm. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Vú Giai Đoạn 2",
+    "Question": "Tôi hiện đang có các triệu chứng như xuất hiện khối u ở vú và thay đổi kích thước của vú. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Vú Giai Đoạn 3",
+    "Question": "Tôi hiện đang có các triệu chứng như da dày lên, giống vỏ cam hoặc trông có thể giống lúm đồng tiền. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Vú Giai Đoạn 4",
+    "Question": "Tôi hiện đang có các triệu chứng như đau vùng lưng-xương hoặc khớp. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Vú Giai Đoạn Đầu",
+    "Question": "Tôi hiện đang có các triệu chứng như vú sưng nề. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Vú Tái Phát",
+    "Question": "Tôi hiện đang có các triệu chứng như xuất hiện khối u mới ở vú hoặc vùng săn chắc không đều. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Vú",
+    "Question": "Tôi hiện đang có các triệu chứng như xuất hiện khối u ở vú và dịch từ núm vú có máu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Xương",
+    "Question": "Tôi hiện đang có các triệu chứng như đau mỏi chân tay, xương có cảm giác đau và vận động yếu hơn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Đại Tràng Giai Đoạn 0",
+    "Question": "Tôi hiện đang có các triệu chứng như đau bụng, rối loạn tiêu hóa và thay đổi thói quen đại tiện. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Đại Tràng Giai Đoạn 1",
+    "Question": "Tôi hiện đang có các triệu chứng như đau bụng, đại tiện phân nhầy lẫn máu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Đại Tràng Giai Đoạn 2",
+    "Question": "Tôi hiện đang có các triệu chứng như đau bụng, đi ngoài ra máu và sụt cân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Đại Tràng Giai Đoạn 3",
+    "Question": "Tôi hiện đang có các triệu chứng như đau bụng, đi ngoài ra máu và sụt cân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Đại Tràng Giai Đoạn 4",
+    "Question": "Tôi hiện đang có các triệu chứng như đau bụng, đi ngoài ra máu và sụt cân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ung Thư Đại Tràng",
+    "Question": "Tôi hiện đang có các triệu chứng như đau bụng, đại tiện ra máu và thay đổi thói quen đại tiện. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Amidan Hốc Mủ",
+    "Question": "Tôi hiện đang có các triệu chứng như khàn tiếng hoặc mất tiếng, ho khan hoặc ho có đờm. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Amidan Mạn Tính",
+    "Question": "Tôi hiện đang có các triệu chứng như miệng hôi, sốt, nuốt vướng, mệt mỏi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Amidan",
+    "Question": "Tôi hiện đang có các triệu chứng như đau cổ họng, amidan sưng đỏ, xuất hiện lớp dịch phủ màu trắng hoặc vàng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Bao Gan Ngón Tay",
+    "Question": "Tôi hiện đang có các triệu chứng như đau ở gốc ngón tay, ngón cái hoặc vị trí tiếp xúc giữa ngón tay với lòng bàn tay. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Bao Hoạt Dịch Cổ Tay",
+    "Question": "Tôi hiện đang có các triệu chứng như đau nhức cổ tay, giống như có vật nặng đè lên khớp cổ tay. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Bao Hoạt Dịch Khớp Cổ Chân",
+    "Question": "Tôi hiện đang có các triệu chứng như đau nhức vùng phía sau cổ chân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Bao Hoạt Dịch Khớp Gối",
+    "Question": "Tôi hiện đang có các triệu chứng như vùng gối có cảm giác ấm nóng, sưng và đau khi đi lại. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Bao Hoạt Dịch Khớp Háng",
+    "Question": "Tôi hiện đang có các triệu chứng như đau nhức, sưng to và đau nhức nhiều ở khớp háng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Bao Hoạt Dịch Khớp Vai",
+    "Question": "Tôi hiện đang có các triệu chứng như đau nhức, sưng đỏ ở vị trí giữa đầu xương cánh tay và mỏm cùng vai. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Bao Quy Đầu",
+    "Question": "Tôi hiện đang có các triệu chứng như bao quy đầu và quy đầu bị sưng, đau nhức, khó chịu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Bàng Quang Cấp",
+    "Question": "Tôi hiện đang có các triệu chứng như đau và khó chịu khi đi tiểu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Bàng Quang Kẽ",
+    "Question": "Tôi hiện đang có các triệu chứng như đau ở vùng chậu, trên xương mu hoặc đau bụng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Bàng Quang Mạn Tính",
+    "Question": "Tôi hiện đang có các triệu chứng như đau ở vùng hạ sườn và vùng chậu, đôi lúc kèm sốt. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Bàng Quang Xuất Huyết",
+    "Question": "Tôi hiện đang có các triệu chứng như đi tiểu ra máu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Bàng Quang Ở Nữ Giới",
+    "Question": "Tôi hiện đang có các triệu chứng như đau và khó chịu khi đi tiểu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Bàng Quang",
+    "Question": "Tôi hiện đang có các triệu chứng như đau và khó chịu khi đi tiểu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Bể Thận",
+    "Question": "Tôi hiện đang có các triệu chứng như sốt trên 38,9°C và đau ở bụng, lưng, bên hông hoặc bẹn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Bờ Mi Trên Mắt",
+    "Question": "Tôi hiện đang có các triệu chứng như kích ứng và sưng tấy ở mí mắt trên. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Cầu Thận Cấp",
+    "Question": "Tôi hiện đang có các triệu chứng như tiểu ra máu, huyết áp cao, nhu cầu đi tiểu thay đổi bất thường. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Cầu Thận Lupus",
+    "Question": "Tôi hiện đang có các triệu chứng như viêm cầu thận xảy ra do lupus ban đỏ hệ thống. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Cầu Thận Mạn",
+    "Question": "Tôi hiện đang có các triệu chứng như phù từng đợt, tăng huyết áp, protein niệu, hồng cầu niệu thường xuyên. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Cầu Thận",
+    "Question": "Tôi hiện đang có các triệu chứng như viêm ở các tiểu cầu thận và các mạch máu trong thận. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Da Cơ Địa",
+    "Question": "Tôi hiện đang có các triệu chứng như ngứa râm ran hay ngứa dữ dội. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Da Dị Ứng",
+    "Question": "Tôi hiện đang có các triệu chứng như ngứa ngáy và da nổi mẩn đỏ. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Da Xoang",
+    "Question": "Tôi hiện đang có các triệu chứng như viêm sưng nề của lớp niêm mạc biểu mô lót trong xoang. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Dạ Dày Cấp",
+    "Question": "Tôi hiện đang có các triệu chứng như dạ dày đau hoặc khó chịu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Dạ Dày Tá Tràng",
+    "Question": "Tôi hiện đang có các triệu chứng như đau ở vùng thượng vị khi đói hoặc sau khi ăn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Dạ Dày",
+    "Question": "Tôi hiện đang có các triệu chứng như đau, nóng vùng thượng vị. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Gan A",
+    "Question": "Tôi hiện đang có các triệu chứng như mệt mỏi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Gan C",
+    "Question": "Tôi hiện đang có các triệu chứng như mệt mỏi, chán ăn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Gan Gót Chân Achilles",
+    "Question": "Tôi hiện đang có các triệu chứng như đau rát bỏng hoặc đau cứng phần thấp bắp chân sau vào buổi sáng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Gan Gấp Ngón Tay Cái",
+    "Question": "Tôi hiện đang có các triệu chứng như ngón cái bật nhẹ không đau hay cảm giác khó chịu mỗi khi cử động. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Gan Mạn Tính",
+    "Question": "Tôi hiện đang có các triệu chứng như tổn thương gan kéo dài hơn 6 tháng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Gan Tự Miễn",
+    "Question": "Tôi hiện đang có các triệu chứng như hệ thống miễn dịch của cơ thể tấn công các tế bào gan. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Hang Vị Dạ Dày",
+    "Question": "Tôi hiện đang có các triệu chứng như đau âm ĩ, cồn cào vùng thượng vị. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Hậu Môn",
+    "Question": "Tôi hiện đang có các triệu chứng như đau, rát hoặc ngứa ở vùng hậu môn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Họng Hạt",
+    "Question": "Tôi hiện đang có các triệu chứng như khô và ngứa họng, thường phải tằng hắng hay khạc ra để bớt ngứa. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Họng Xuất Huyết",
+    "Question": "Tôi hiện đang có các triệu chứng như sốt trên 38 độ, đau đầu, mệt mỏi, khó thở, ớn lạnh, đau nhức toàn thân, chán ăn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Khớp Cấp",
+    "Question": "Tôi hiện đang có các triệu chứng như sưng, đỏ và nóng ở các khớp bị ảnh hưởng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Khớp Cổ Tay",
+    "Question": "Tôi hiện đang có các triệu chứng như đau, nhức, mỏi ở vùng cổ tay. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Khớp Liên Cầu",
+    "Question": "Tôi hiện đang có các triệu chứng như đau nhức khớp dữ dội, sưng khớp và sốt cao. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Khớp Ngón Tay",
+    "Question": "Tôi hiện đang có các triệu chứng như đau khớp ngón tay, sưng khớp và cứng khớp buổi sáng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Khớp Nhiễm Khuẩn",
+    "Question": "Tôi hiện đang có các triệu chứng như đau khớp, sưng khớp và sốt cao. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Khớp Phản Ứng",
+    "Question": "Tôi hiện đang có các triệu chứng như đau khớp, sưng khớp sau khi bị nhiễm trùng đường tiết niệu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Khớp Vảy Nến",
+    "Question": "Tôi hiện đang có các triệu chứng như đau khớp, sưng khớp và phát ban đỏ có vảy ở khuỷu tay. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Khớp",
+    "Question": "Tôi hiện đang có các triệu chứng như đau khớp, cứng khớp và sưng khớp. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Kết Mạc",
+    "Question": "Tôi hiện đang có các triệu chứng như đỏ mắt. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Loét Dạ Dày Tá Tràng",
+    "Question": "Tôi hiện đang có các triệu chứng như viêm, loét dạ dày tá tràng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Loét Giác Mạc",
+    "Question": "Tôi hiện đang có các triệu chứng như vết loét hở trên giác mạc. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Màng Bồ Đào",
+    "Question": "Tôi hiện đang có các triệu chứng như viêm ở bất kỳ vị trí nào trong lớp có sắc tố bên trong mắt. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Màng Não Mô Cầu",
+    "Question": "Tôi hiện đang có các triệu chứng như sốt cao đột ngột. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Màng Não Mủ",
+    "Question": "Tôi hiện đang có các triệu chứng như viêm của màng não khi có sự xâm lấn và tăng sinh của các yếu tố gây bệnh trong dịch não tủy. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Màng Não",
+    "Question": "Tôi hiện đang có các triệu chứng như biếng ăn, quấy khóc. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Mào Tinh Hoàn",
+    "Question": "Tôi hiện đang có các triệu chứng như mào tinh hoàn bị viêm sưng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Mũi Dị Ứng Thời Tiết",
+    "Question": "Tôi hiện đang có các triệu chứng như hắt hơi, ngứa mũi và chảy nước mũi, đặc biệt là vào mùa xuân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Mũi Dị Ứng",
+    "Question": "Tôi hiện đang có các triệu chứng như hắt hơi, sổ mũi, nghẹt mũi, ngứa mũi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Mũi Mạn Tính",
+    "Question": "Tôi hiện đang có các triệu chứng như viêm mũi kéo dài trên 3 tháng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Mũi",
+    "Question": "Tôi hiện đang có các triệu chứng như viêm sưng lớp niêm mạc ở khoang mũi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Mống Mắt",
+    "Question": "Tôi hiện đang có các triệu chứng như viêm mống mắt. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Niêm Mạc Dạ Dày",
+    "Question": "Tôi hiện đang có các triệu chứng như viêm, kích ứng, ăn mòn niêm mạc dạ dày. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Niệu Đạo",
+    "Question": "Tôi hiện đang có các triệu chứng như viêm niệu đạo. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Nội Mạc Tử Cung",
+    "Question": "Tôi hiện đang có các triệu chứng như đau bụng dữ dội cả trước và trong thời gian hành kinh. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Phế Quản Mạn Tính",
+    "Question": "Tôi hiện đang có các triệu chứng như ho dai dẳng, khạc đờm và khó thở. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Phế Quản Phổi",
+    "Question": "Tôi hiện đang có các triệu chứng như ho dai dẳng, ho ra máu và khó thở. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Phổi Do Metapneumovirus",
+    "Question": "Tôi đang có các triệu chứng như ho, chảy nước mũi, sốt và khó thở. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Phổi",
+    "Question": "Tôi hiện đang có các triệu chứng như ho, đau ngực, sốt và mệt mỏi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Ruột Mạn Tính",
+    "Question": "Tôi hiện đang có các triệu chứng như tiêu chảy kéo dài, đau quặn bụng và sụt cân. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Ruột Thừa Cấp",
+    "Question": "Tôi hiện đang bị đau bụng vùng hố chậu phải và buồn nôn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Ruột Thừa",
+    "Question": "Tôi hiện đang bị đau bụng quanh rốn và lan dần xuống hố chậu phải. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Tai Giữa Thủng Màng Nhĩ",
+    "Question": "Tôi hiện đang bị chảy mủ tai có mùi hôi và nghe kém. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Tai Giữa Ứ Dịch",
+    "Question": "Tôi hiện đang có các triệu chứng như nghe kém, ù tai và đau tai. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Tai Giữa Ứ Mủ",
+    "Question": "Tôi hiện đang có các triệu chứng như đau tai, nghe kém và chảy dịch tai. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Tai Giữa",
+    "Question": "Tôi hiện đang bị đau tai, sốt và chảy dịch tai. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Tai Ngoài",
+    "Question": "Tôi hiện đang có các triệu chứng như đau tai, chảy dịch tai và ngứa tai. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Tai Xương Chũm",
+    "Question": "Tôi hiện đang có các triệu chứng như chảy dịch tai, đau tai và sưng sau tai. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Tai",
+    "Question": "Tôi hiện đang bị đau tai và ngứa tai, kèm theo chảy dịch tai có mùi hôi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Thanh Quản",
+    "Question": "Tôi hiện đang có các triệu chứng như khàn tiếng, đau họng và ho khan. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Thận Bể Thận Cấp",
+    "Question": "Tôi hiện đang có các triệu chứng như sốt cao, đau lưng và đi tiểu buốt. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Thận Lupus",
+    "Question": "Tôi hiện đang có các triệu chứng như nước tiểu sẫm màu, sủi bọt và tăng nhu cầu đi tiểu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Tinh Hoàn",
+    "Question": "Tôi hiện đang có các triệu chứng như đau tinh hoàn, sưng bìu và tiểu buốt. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Trực Tràng",
+    "Question": "Tôi hiện đang có các triệu chứng như mót rặn, đau quặn bụng và đi cầu ra máu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Tuyến Giáp",
+    "Question": "Tôi hiện đang có các triệu chứng như vùng cổ trước bị đau và sưng, khó nuốt. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Tuyến Nước Bọt",
+    "Question": "Tôi hiện đang có các triệu chứng như sưng tuyến nước bọt, khô miệng và đau họng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Tuyến Tiền Liệt Cấp Tính",
+    "Question": "Tôi hiện đang có các triệu chứng như đau rát khi đi tiểu, sốt và ớn lạnh. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Tuyến Tiền Liệt Mạn Tính",
+    "Question": "Tôi hiện đang có các triệu chứng như đau tức vùng bụng dưới, tiểu buốt và tiểu rắt. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Tuyến Tiền Liệt",
+    "Question": "Tôi hiện đang có các triệu chứng như tiểu buốt, tiểu rắt và đau bụng dưới. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Tuyến Vú",
+    "Question": "Tôi hiện đang có các triệu chứng như đau tức ngực, sưng tấy vú và sốt. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Túi Mật",
+    "Question": "Tôi hiện đang có các triệu chứng như đau nhói ở vùng hạ sườn phải, buồn nôn và sốt. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Tụy Mạn Tính",
+    "Question": "Tôi hiện đang có các triệu chứng như đau bụng vùng thượng vị, lan ra sau lưng và tiêu chảy. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Tụy",
+    "Question": "Tôi hiện đang có các triệu chứng như đau bụng trên, buồn nôn và nôn mửa. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Xoang Bướm",
+    "Question": "Tôi hiện đang có các triệu chứng như đau đầu vùng sau ổ mắt, chảy nước mũi sau và đau tai. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Xoang Cấp Tính",
+    "Question": "Tôi hiện đang có các triệu chứng như chảy mủ mũi, nghẹt mũi và đau nhức vùng chữ T. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Xoang Do Nấm",
+    "Question": "Tôi hiện đang có các triệu chứng như nghẹt mũi, chảy nước mũi và suy giảm khứu giác. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Xoang Hàm",
+    "Question": "Tôi hiện đang có các triệu chứng như đau nhức vùng mặt, đau đầu và nghẹt mũi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Xoang Mũi Dị Ứng",
+    "Question": "Tôi hiện đang có các triệu chứng như ngứa mũi, hắt xì liên tục và chảy nước mũi trong. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Xoang Mạn Tính",
+    "Question": "Tôi hiện đang có các triệu chứng như chảy mũi đục, đau nhức vùng hàm mặt và nghẹt mũi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Xoang sàng",
+    "Question": "Tôi hiện đang có các triệu chứng như đau nhức quanh mắt, sốt và nhức đầu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Xoang Trán",
+    "Question": "Tôi hiện đang có các triệu chứng như đau nhức vùng trán, chảy nước mũi và nghẹt mũi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Xung Huyết Hang Vị Dạ Dày",
+    "Question": "Tôi hiện đang có các triệu chứng như đau rát vùng thượng vị và ợ hơi, ợ chua. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Âm Đạo Mạn Tính",
+    "Question": "Tôi hiện đang có các triệu chứng như viêm nhiễm xảy ra ở âm đạo. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Âm Đạo",
+    "Question": "Tôi hiện đang có các triệu chứng như âm đạo bị viêm nhiễm, tiết ra dịch có mùi khó chịu, gây nên tình trạng ngứa và đau. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Đường Hô Hấp Dưới",
+    "Question": "Tôi hiện đang có các triệu chứng như nghẹt mũi hoặc chảy nước mũi, sốt nhẹ, ho khan. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Đường Ruột",
+    "Question": "Tôi hiện đang có các triệu chứng như viêm mô mãn tính trong đường tiêu hóa. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Đường Tiết Niệu Khi Mang Thai",
+    "Question": "Tôi hiện đang có các triệu chứng như đau rát hoặc cảm thấy khó chịu khi đi tiểu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Đường Tiết Niệu Sau Sinh",
+    "Question": "Tôi hiện đang có các triệu chứng như tiểu buốt, tiểu gắt. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Đường Tiết Niệu",
+    "Question": "Tôi hiện đang có các triệu chứng như nước tiểu có sự xâm nhập của vi khuẩn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viêm Đại Tràng",
+    "Question": "Tôi hiện đang có các triệu chứng như đau bụng kéo dài ở nửa khung đại tràng trái và hai hố chậu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Viễn Thị",
+    "Question": "Tôi hiện đang có các triệu chứng như nhìn mờ khi nhìn gần. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Vô Sinh Hiếm Muộn",
+    "Question": "Tôi hiện đang có các triệu chứng như không có thai sau 1 năm quan hệ tình dục thường xuyên. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Vô Sinh Nguyên Phát",
+    "Question": "Tôi hiện đang có các triệu chứng như không có thai sau 12 tháng chung sống. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Vô Sinh Nữ",
+    "Question": "Tôi hiện đang có các triệu chứng như không có thai sau 1 năm quan hệ tình dục thường xuyên. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Vô Sinh",
+    "Question": "Tôi hiện đang có các triệu chứng như kinh nguyệt không đều và đau bụng kinh dữ dội. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Vôi Hóa Xương",
+    "Question": "Tôi hiện đang có các triệu chứng như đau nhức xương khớp và cứng khớp. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Vỡ Mạch Máu Não",
+    "Question": "Tôi hiện đang có các triệu chứng như đau đầu dữ dội, buồn nôn và nôn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Vỡ Túi Ngực",
+    "Question": "Tôi hiện đang có các triệu chứng như đau, nhức hoặc sưng ở ngực. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Vỡ Tử Cung",
+    "Question": "Tôi hiện đang có các triệu chứng như đau nhói vùng hạ vị đột ngột. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Xoắn Tinh Hoàn",
+    "Question": "Tôi hiện đang có các triệu chứng như đau đột ngột và dữ dội một bên bìu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Xuất Huyết Dạ Dày",
+    "Question": "Tôi hiện đang có các triệu chứng như đau bụng vùng thượng vị và đi ngoài ra máu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Xuất Huyết Tiêu Hóa",
+    "Question": "Tôi hiện đang có các triệu chứng như phân lẫn máu và xanh xao. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Xuất Huyết Tử Cung Bất Thường",
+    "Question": "Tôi hiện đang có các triệu chứng như chảy máu vùng kín. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Xuất Tinh Ngược Dòng",
+    "Question": "Tôi hiện đang có các triệu chứng như không xuất tinh xuôi dòng ra ngoài. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Xuất Tinh Sớm",
+    "Question": "Tôi hiện đang có các triệu chứng như không thể kiểm soát được thời gian xuất tinh. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Xơ Cứng Bi Khu Trú",
+    "Question": "Tôi hiện đang có các triệu chứng như da xuất hiện các mảng đổi màu, dày và cứng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Xơ Cứng Bi Toàn Thể",
+    "Question": "Tôi hiện đang có các triệu chứng như da căng cứng, bóng và khó cử động. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Xơ Cứng Bi",
+    "Question": "Tôi hiện đang có các triệu chứng như da dày lên, xơ hóa và tích tụ mô sẹo. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Xơ Gan Còn Bù",
+    "Question": "Tôi hiện đang có các triệu chứng như chán ăn, ăn không ngon và mệt mỏi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Xơ Gan Cổ Trướng",
+    "Question": "Tôi hiện đang có các triệu chứng như chướng bụng và cân nặng thay đổi nhanh chóng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Xơ Gan Do Rượu",
+    "Question": "Tôi hiện đang có các triệu chứng như tăng áp lực tĩnh mạch cửa và lá lách to. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Xơ Gan Mật Bù",
+    "Question": "Tôi hiện đang có các triệu chứng như vàng da, cổ trướng và bệnh não gan. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Xơ Gan",
+    "Question": "Tôi hiện đang có các triệu chứng như vàng da, vàng mắt và ngứa da. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Xơ Phổi",
+    "Question": "Tôi hiện đang có các triệu chứng như khó thở và ho khan. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Xơ Vữa Động Mạch Vành",
+    "Question": "Tôi hiện đang có các triệu chứng như đau ngực khi tập thể dục. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Xơ Vữa Động Mạch",
+    "Question": "Tôi hiện đang có các triệu chứng như đau ngực khi tập thể dục. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Xẹp Đốt Sống",
+    "Question": "Tôi hiện đang có các triệu chứng như đau lưng và giảm chiều cao. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Yếu Sinh Lý Ở Nữ",
+    "Question": "Tôi hiện đang có các triệu chứng như khô hạn và đau rát ở âm đạo. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Yếu Sinh Lý",
+    "Question": "Tôi hiện đang có các triệu chứng như giảm ham muốn tình dục, rối loạn cương dương và xuất tinh sớm. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Áp Xe Hậu Môn",
+    "Question": "Tôi hiện đang có các triệu chứng như đau nhói hậu môn, sưng tấy và chảy máu khi đi vệ sinh. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Áp Xe Phổi",
+    "Question": "Tôi hiện đang có các triệu chứng như sốt cao, ho và hơi thở có mùi hôi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ăn Không Tiêu",
+    "Question": "Tôi hiện đang có các triệu chứng như ợ hơi và ợ chua, đặc biệt sau khi ăn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Đau Bụng Kinh",
+    "Question": "Tôi hiện đang có các triệu chứng như đau âm ỉ ở bụng dưới, đau quặn và buồn nôn trước kỳ kinh nguyệt. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Đau Cổ Tay Sau Sinh",
+    "Question": "Tôi hiện đang có các triệu chứng như đau âm ỉ ở cổ tay, tăng dần theo thời gian và lan lên cánh tay. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Đau Dạ Dày",
+    "Question": "Tôi hiện đang có các triệu chứng như đau ở vùng thượng vị, ợ chua và buồn nôn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Đau Họng",
+    "Question": "Tôi hiện đang có các triệu chứng như đau họng, ho, sốt, cổ có đờm, hôi miệng, sổ mũi, nghẹt mũi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Đau Khớp Gối",
+    "Question": "Tôi hiện đang có các triệu chứng như sưng và cứng khớp gối, kèm theo đau và nóng ấm khi chạm vào. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Đau Khớp Khuỷu Tay",
+    "Question": "Tôi hiện đang có các triệu chứng như sưng khớp, hạn chế khả năng vận động và xuất hiện gai xương ở khuỷu tay. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Đau Khớp",
+    "Question": "Tôi hiện đang có các triệu chứng như đau nhức khớp vai. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Đau Mắt",
+    "Question": "Tôi hiện đang có các triệu chứng như khô và đau mắt, kèm theo cảm giác cộm và chảy nước mắt sống. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Đau Nhức Hốc Mắt",
+    "Question": "Tôi hiện đang có các triệu chứng như đau mắt đột ngột và dữ dội. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Đau Nửa Đầu Bên Phải",
+    "Question": "Tôi hiện đang có các triệu chứng như đau nửa đầu bên phải, kèm theo chóng mặt và buồn nôn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Đau Nửa Đầu Bên Trái",
+    "Question": "Tôi hiện đang có các triệu chứng như đau lan tỏa khắp nửa đầu bên trái, kèm theo sụp mí mắt và mờ mắt. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Đau Nửa Đầu Phía Sau",
+    "Question": "Tôi hiện đang có các triệu chứng như đau âm ỉ ở phía sau đầu, kèm theo cứng gáy và vai. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Đau Nửa Đầu Phía Trước",
+    "Question": "Tôi hiện đang có các triệu chứng như đau đầu phía trước, kéo dài 4-72 giờ, kèm theo chóng mặt và ù tai. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Đau Nửa Đầu",
+    "Question": "Tôi hiện đang có các triệu chứng như đau nửa đầu theo nhịp mạch đập, kèm theo buồn nôn và nôn. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Đau Thắt Ngực",
+    "Question": "Tôi hiện đang có các triệu chứng như đau thắt ngực, lan xuống cánh tay trái và khó thở. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Đau Tinh Hoàn Bên Phải",
+    "Question": "Tôi hiện đang có các triệu chứng như đau đột ngột và dữ dội ở tinh hoàn bên phải, kèm theo sưng và đỏ. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Đau Tinh Hoàn Bên Trái",
+    "Question": "Tôi hiện đang có các triệu chứng như đau đột ngột và dữ dội ở tinh hoàn bên trái, kèm theo sưng và đỏ. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Đau Tinh Hoàn",
+    "Question": "Tôi hiện đang có các triệu chứng như đau buốt tinh hoàn, sau đó âm ỉ, kèm theo bầm tím ở bìu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Đau Vú",
+    "Question": "Tôi hiện đang có các triệu chứng như đau âm ỉ ở cả hai vú, cảm giác nặng nề và sưng vú trước kỳ kinh nguyệt. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Đau Đầu Gối Khi Đứng Lên Ngồi Xuống",
+    "Question": "Tôi hiện đang có các triệu chứng như đau đầu gối khi đứng lên ngồi xuống, đặc biệt là buổi sáng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Đau Đầu Migraine",
+    "Question": "Tôi hiện đang có các triệu chứng như đau nửa đầu và muốn biết về giai đoạn tiền triệu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Đau Đầu Sau Gáy",
+    "Question": "Tôi hiện đang có các triệu chứng như đau nhức vùng sau gáy, mức độ vừa đến nặng. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Đau Đầu Vận Mạch",
+    "Question": "Tôi hiện đang có các triệu chứng như đau nhói một bên đầu, buồn nôn, chóng mặt và ảnh hưởng thị lực. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Đau Đầu",
+    "Question": "Tôi hiện đang có các triệu chứng như đau đầu từ nhẹ đến vừa, cảm giác đầu bị bó chặt như có dải băng quấn quanh. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Đau Đỉnh Đầu",
+    "Question": "Tôi hiện đang có triệu chứng đau nhói như có vật nặng đè lên đỉnh đầu. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Điều Trị Chứng Rối Loạn Tiền Mãn Kinh",
+    "Question": "Tôi hiện đang có các triệu chứng như kinh nguyệt thất thường, khó thụ thai và hay bốc hỏa. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Đái Tháo Đường Thai Kỳ",
+    "Question": "Tôi hiện đang mang thai và cảm thấy khát nước liên tục, đi tiểu nhiều lần trong ngày. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Đái Tháo Đường",
+    "Question": "Tôi hiện đang có các triệu chứng như cảm thấy đói và mệt mỏi hơn bình thường, dù ăn uống đầy đủ. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Đái Tiểu Ra Máu",
+    "Question": "Tôi hiện đang có các triệu chứng như đi tiểu ra máu, nước tiểu màu hồng nhạt. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Đĩa Đệm Mất Nước",
+    "Question": "Tôi hiện đang có các triệu chứng như đau âm ỉ vùng cột sống lưng, khó khăn khi vận động. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Đạm Niệu",
+    "Question": "Tôi hiện đang có các triệu chứng như nước tiểu có bọt và sưng phù ở mặt. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Động Mạch Cảnh",
+    "Question": "Tôi hiện đang có các triệu chứng như đau đầu, chóng mặt và suy giảm thị lực. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Đột Quỵ Thiếu Máu Cục Bộ",
+    "Question": "Tôi hiện đang có các triệu chứng như đột ngột yếu liệt hoặc tê bì chân tay một bên cơ thể. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Đột Quỵ",
+    "Question": "Tôi hiện đang có các triệu chứng như mặt bị méo, cười khó khăn và tê một bên tay. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Đục Thủy Tinh Thể",
+    "Question": "Tôi hiện đang có các triệu chứng như mờ mắt, khó khăn khi lái xe vào ban đêm và cảm giác như có màng che trước mắt. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ối Vỡ Non",
+    "Question": "Tôi hiện đang có các triệu chứng như rỉ nước từ âm đạo, không màu và không mùi. Tôi có thể đang bị bệnh gì?"
+  },
+  {
+    "Disease": "Ốm Nghén Khi Mang Thai",
+    "Question": "Tôi đang mang thai và cảm thấy buồn nôn, nôn khan, đặc biệt là vào buổi sáng. Tôi có thể đang bị bệnh gì?"
+  }
+]
