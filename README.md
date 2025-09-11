@@ -31,7 +31,6 @@ uvicorn a2a_medical.app:app --reload --port 8000
 
 
 ## Project structure
-## Cấu trúc thư mục
 
 ```mermaid
 graph TD
@@ -45,25 +44,26 @@ graph TD
     %% Host
     E --> H[host/]
     H --> H1[__init__.py]
-    H --> H2[host_agent.py<br/>(Orchestrator: route → diagnose/schedule/cost)]
+    H --> H2[host_agent.py\nOrchestrator: route → diagnose/schedule/cost]
 
     %% Diagnose
     E --> Dg[diagnose/]
     Dg --> Dg1[__init__.py]
-    Dg --> Dg2[agent.py<br/>(DiagnosisAgent)]
-    Dg --> Dg3[generator.py<br/>(LLMGenerator, prompt, parsing)]
-    Dg --> Dg4[retriever.py<br/>(Retriever, ViRanker)]
-    Dg --> Dg5[embedder.py<br/>(EmbeddingGenerator BGE-M3)]
-    Dg --> Dg6[vector_db.py<br/>(Qdrant wrapper)]
-    Dg --> Dg7[preprocessor.py<br/>(PDF → chunks.jsonl)]
+    Dg --> Dg2[agent.py\nDiagnosisAgent]
+    Dg --> Dg3[generator.py\nLLMGenerator, prompt, parsing]
+    Dg --> Dg4[retriever.py\nRetriever, ViRanker]
+    Dg --> Dg5[embedder.py\nEmbeddingGenerator BGE-M3]
+    Dg --> Dg6[vector_db.py\nQdrant wrapper]
+    Dg --> Dg7[preprocessor.py\nPDF → chunks.jsonl]
 
     %% Schedule
     E --> S[schedule/]
     S --> S1[__init__.py]
-    S --> S2[agent.py<br/>(ScheduleAgent stub)]
+    S --> S2[agent.py\nScheduleAgent stub]
 
     %% Cost
     E --> Cst[cost/]
     Cst --> Cst1[__init__.py]
-    Cst --> Cst2[agent.py<br/>(CostAdvisorAgent stub)]
+    Cst --> Cst2[agent.py\nCostAdvisorAgent stub]
+
 
