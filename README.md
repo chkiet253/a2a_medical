@@ -32,38 +32,29 @@ uvicorn a2a_medical.app:app --reload --port 8000
 
 ## Project structure
 
-```mermaid
-graph TD
-    A[a2a-medical] --> B[app.py]
-    A --> C[.env]
-    A --> D[requirements.txt]
-    A --> E[a2a_medical/]
-
-    E --> E1[__init__.py]
-
-    %% Host
-    E --> H[host/]
-    H --> H1[__init__.py]
-    H --> H2[host_agent.py\nOrchestrator: route → diagnose/schedule/cost]
-
-    %% Diagnose
-    E --> Dg[diagnose/]
-    Dg --> Dg1[__init__.py]
-    Dg --> Dg2[agent.py\nDiagnosisAgent]
-    Dg --> Dg3[generator.py\nLLMGenerator, prompt, parsing]
-    Dg --> Dg4[retriever.py\nRetriever, ViRanker]
-    Dg --> Dg5[embedder.py\nEmbeddingGenerator BGE-M3]
-    Dg --> Dg6[vector_db.py\nQdrant wrapper]
-    Dg --> Dg7[preprocessor.py\nPDF → chunks.jsonl]
-
-    %% Schedule
-    E --> S[schedule/]
-    S --> S1[__init__.py]
-    S --> S2[agent.py\nScheduleAgent stub]
-
-    %% Cost
-    E --> Cst[cost/]
-    Cst --> Cst1[__init__.py]
-    Cst --> Cst2[agent.py\nCostAdvisorAgent stub]
+```bash
+a2a-medical/
+├─ app.py
+├─ .env
+├─ requirements.txt
+└─ a2a_medical/
+   ├─ __init__.py
+   ├─ host/
+   │  ├─ __init__.py
+   │  └─ host_agent.py      # Orchestrator: route -> diagnose/schedule/cost
+   ├─ diagnose/
+   │  ├─ __init__.py
+   │  ├─ agent.py           # DiagnosisAgent (từ generator.py)
+   │  ├─ generator.py       # LLMGenerator, prompt, parsing
+   │  ├─ retriever.py       # Retriever, ViRanker
+   │  ├─ embedder.py        # EmbeddingGenerator (BGE-M3)
+   │  ├─ vector_db.py       # Qdrant wrapper
+   │  └─ preprocessor.py    # PDF -> chunks.jsonl
+   ├─ schedule/
+   │  ├─ __init__.py
+   │  └─ agent.py           # ScheduleAgent (stub)
+   └─ cost/
+      ├─ __init__.py
+      └─ agent.py           # CostAdvisorAgent (stub)
 
 
