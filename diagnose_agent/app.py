@@ -27,10 +27,10 @@ except Exception as e:
     print("[QDRANT PROBE ERROR]", repr(e))
 
 # === Core imports (NO ingest) ===
-from a2a_medical.vector_db import VectorDB
-from a2a_medical.embedder import EmbeddingGenerator
-from a2a_medical.retriever import Retriever, ViRanker
-from a2a_medical.generator import LLMGenerator, DiagnosisAgent     # Gemma (Groq/OpenRouter/Ollama) — bạn đã khoá Gemma
+from diagnose_agent.vector_db import VectorDB
+from diagnose_agent.embedder import EmbeddingGenerator
+from diagnose_agent.retriever import Retriever, ViRanker
+from diagnose_agent.generator import LLMGenerator, DiagnosisAgent     # Gemma (Groq/OpenRouter/Ollama) — bạn đã khoá Gemma
 
 # ================= Helpers (cached) =================
 @st.cache_resource(show_spinner=False)

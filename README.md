@@ -44,6 +44,7 @@ a2a-medical/
    │  └─ host_agent.py      # Orchestrator: route -> diagnose/schedule/cost
    ├─ diagnose/
    │  ├─ __init__.py
+   │  ├─ app.py             # Streamlit (deploy local)
    │  ├─ agent.py           # DiagnosisAgent (từ generator.py)
    │  ├─ generator.py       # LLMGenerator, prompt, parsing
    │  ├─ retriever.py       # Retriever, ViRanker

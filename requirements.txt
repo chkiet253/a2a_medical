@@ -17,3 +17,8 @@ requests>=2.32
 sqlite-utils==3.36
 pandas>=2.2.2
 bert-score>=0.3.13
+httpx
+tqdm
+loguru
+python-multipart 
+PyPDF  

@@ -110,44 +110,46 @@ class LLMGenerator:
 # Agent (RAG answer)
 class DiagnosisAgent:
     """
-    Chuẩn đoán duy nhất 1 bệnh:
-    - retriever(query) -> top contexts sau ViRanker
-    - build_diag_prompt -> ép format chẩn đoán
-    - llm.chat -> Gemma (qua LLMGenerator)
+    Chẩn đoán duy nhất 1 bệnh:
+    - retriever(query) -> contexts (top sau ViRanker)
+    - build_prompt(query, contexts) -> ép format
+    - llm.chat(messages) -> Gemma (qua LLMGenerator)
+    - parse kết quả thành {disease, rationale, answer_raw, contexts, model}
     """
     def __init__(self, retriever, llm):
         self.retriever = retriever
         self.llm = llm
 
-    def answer(self, query: str):
-        hits = self.retriever(query)       # [{"text","meta"} ...] (top sau rerank)
+    def handle(self, payload: Dict[str, Any]) -> Dict[str, Any]:
+        """API-style: nhận payload {query: "..."}"""
+        query = payload.get("query", "")
+        if not query:
+            return {"error": "Missing query"}
+        return self.answer(query)
+
+    def answer(self, query: str) -> Dict[str, Any]:
+        """Chẩn đoán từ câu hỏi query"""
+        hits = self.retriever(query)  # [{"text","meta"}, ...]
         contexts = [h["text"] for h in hits]
         messages = build_prompt(query, contexts)
         txt = self.llm.chat(messages).strip()
 
-        # Parse mềm để lấy "Chẩn đoán: ..."
-        disease = None
-        rationale = None
-        if "Không đủ thông tin trong nguồn" in txt:
-            disease = None
-            rationale = None
-        else:
-            # cố gắng tách theo định dạng đã ép
+        # Parse kết quả
+        disease, rationale = None, None
+        if "Không đủ thông tin trong nguồn" not in txt:
             for line in txt.splitlines():
                 line = line.strip()
                 if line.lower().startswith("chẩn đoán:"):
                     disease = line.split(":", 1)[-1].strip()
                 elif line.lower().startswith("lý do:"):
                     rationale = line.split(":", 1)[-1].strip()
-            # fallback nếu model không theo format
-            if not disease:
-                # lấy câu đầu làm tên bệnh ước đoán
+            if not disease:  # fallback
                 disease = txt.split("\n", 1)[0].strip()
 
         return {
-            "disease": disease,                 # Tên bệnh (1 bệnh) hoặc None nếu thiếu dữ kiện
-            "rationale": rationale,             # Lý do ngắn (nếu tách được)
-            "answer_raw": txt,                  # Toàn văn model trả
-            "contexts": hits,                   # Để bạn show citation book_name/page/id
-            "model": getattr(self.llm, "model", None)
+            "disease": disease,
+            "rationale": rationale,
+            "answer_raw": txt,
+            "contexts": hits,
+            "model": getattr(self.llm, "model", None),
         }
