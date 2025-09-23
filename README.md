@@ -1,61 +1,40 @@
-# A2A Medical RAG (Gemma-2-9B-IT + BGE-M3 + Qdrant + ViRanker)
+# Sample Code
 
-Pipeline tối giản đúng spec: 
-- LLM core: Gemma-2-9B-IT (OpenRouter)
-- Embedding: BAAI/bge-m3 (FlagEmbedding, local)
-- Vector DB: Qdrant Cloud (cosine, 1024d)
-- Rerank: ViRanker (CrossEncoder)
-- Tiền xử lý: pdfplumber -> NFC -> bỏ khoảng trắng thừa -> lowercase -> gộp newline (KHÔNG bỏ stopword)
-- Chunking: 1 page, no overlap
-- API: FastAPI localhost
-- Log: SQLite local
+This code is used to demonstrate A2A capabilities as the spec progresses.\ Samples are divided into 3 sub directories:
 
-## Cài đặt
-```bash
-pip install -r requirements.txt
-# Chỉnh .env theo Qdrant/OpenRouter của bạn
-```
+* [**Common**](/samples/python/common)  
+Common code that all sample agents and apps use to speak A2A over HTTP. 
 
-## Chuẩn bị dữ liệu
-- Đặt PDF vào: `data/raw_pdfs/`
+* [**Agents**](/samples/python/agents/README.md)  
+Sample agents written in multiple frameworks that perform example tasks with tools. These all use the common A2AServer.
 
-## Ingest (trích xuất -> embed -> upsert Qdrant)
-```bash
-python -m scripts.ingest
-```
+* [**Hosts**](/samples/python/hosts/README.md)  
+Host applications that use the A2AClient. Includes a CLI which shows simple task completion with a single agent, a mesop web application that can speak to multiple agents, and an orchestrator agent that delegates tasks to one of multiple remote A2A agents.
 
-## Chạy API
-```bash
-uvicorn a2a_medical.app:app --reload --port 8000
-```
+## Prerequisites
 
+- Python 3.13 or higher
+- UV
 
-## Project structure
+## Running the Samples
 
-```bash
-a2a-medical/
-├─ app.py
-├─ .env
-├─ requirements.txt
-└─ a2a_medical/
-   ├─ __init__.py
-   ├─ host/
-   │  ├─ __init__.py
-   │  └─ host_agent.py      # Orchestrator: route -> diagnose/schedule/cost
-   ├─ diagnose/
-   │  ├─ __init__.py
-   │  ├─ app.py             # Streamlit (deploy local)
-   │  ├─ agent.py           # DiagnosisAgent (từ generator.py)
-   │  ├─ generator.py       # LLMGenerator, prompt, parsing
-   │  ├─ retriever.py       # Retriever, ViRanker
-   │  ├─ embedder.py        # EmbeddingGenerator (BGE-M3)
-   │  ├─ vector_db.py       # Qdrant wrapper
-   │  └─ preprocessor.py    # PDF -> chunks.jsonl
-   ├─ schedule/
-   │  ├─ __init__.py
-   │  └─ agent.py           # ScheduleAgent (stub)
-   └─ cost/
-      ├─ __init__.py
-      └─ agent.py           # CostAdvisorAgent (stub)
+Run one (or more) [agent](/samples/python/agents/README.md) A2A server and one of the [host applications](/samples/python/hosts/README.md). 
 
+The following example will run the langgraph agent with the python CLI host:
 
+1. Navigate to the samples/python directory:
+    ```bash
+    cd samples/python
+    ```
+2. Run an agent:
+    ```bash
+    uv run agents/langgraph
+    ```
+3. Run the example client
+    ```
+    uv run hosts/cli
+    ```
+---
+**NOTE:** 
+This is sample code and not production-quality libraries.
+---
