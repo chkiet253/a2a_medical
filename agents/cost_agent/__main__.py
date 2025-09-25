@@ -17,15 +17,15 @@ def main(host, port):
     try:
         capabilities = AgentCapabilities(streaming=True)
         skill = AgentSkill(
-            id="uoc_luong_chi_phi",
-            name="Agent Ước Tính Chi Phí",
-            description="Ước tính chi phí khám/xét nghiệm cho một căn bệnh cụ thể và gửi lại biểu mẫu chi phí có thể chỉnh sửa.",
-            tags=["chi phí", "giá", "ước tính"],
-            examples=["Ước tính chi phí xét nghiệm nghi ngờ mắc bệnh tiểu đường."],
+            id="chi_phi",
+            name="Agent Chi Phí",
+            description="Chi phí khám/xét nghiệm cho một căn bệnh cụ thể",
+            tags=["chi phí", "giá"],
+            examples=["Chi phí xét nghiệm nghi ngờ mắc bệnh tiểu đường."],
         )
         agent_card = AgentCard(
-            name="Agent Ước Tính Chi Phí",
-            description="Trả về bảng phân tích có cấu trúc và có thể chỉnh sửa về chi phí y tế cho một căn bệnh.",
+            name="Agent Chi Phí",
+            description="Trả về bảng phân tích có cấu trúc chi phí y tế cho một căn bệnh.",
             url=f"http://{host}:{port}/",
             version="1.0.0",
             defaultInputModes=CostAgent.SUPPORTED_CONTENT_TYPES,

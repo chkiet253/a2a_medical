@@ -9,14 +9,16 @@ from google.adk.runners import Runner
 from google.adk.sessions import InMemorySessionService
 from google.genai import types
 
-def propose_slots(disease: str, preferred_date: Optional[str] = None, clinic: str = "General Clinic") -> dict[str, Any]:
+from datetime import datetime
+
+def propose_slots(disease: str, preferred_date: str, clinic: str) -> dict[str, Any]:
     base = datetime.strptime(preferred_date, "%Y-%m-%d") if preferred_date else datetime.now()
     slots = []
     for i in range(5):
         d = (base + timedelta(days=random.randint(0, 30))).date().isoformat()
         period = random.choice(["AM", "PM"])
         slots.append({
-            "slot_id": f"{d}-{period}",   # <- đổi thành slot_id
+            "slot_id": f"{d}-{period}",
             "date": d,
             "note": f"{d} {period}",
             "clinic": clinic,
@@ -25,67 +27,12 @@ def propose_slots(disease: str, preferred_date: Optional[str] = None, clinic: st
     return {
         "disease": disease,
         "clinic": clinic,
-        "available_slots": slots,         # <- available_slots
-        "selected_slot_id": "",           # <- selected_slot_id
-        "patient_name": ""                # <- patient_name
+        "available_slots": slots,
+        "selected_slot_id": "",
+        "patient_name": ""
     }
 
 
-
-def _return_form(form: dict[str, Any], tool_context: ToolContext, instructions: str = "") -> str:
-    tool_context.actions.skip_summarization = True
-    tool_context.actions.escalate = True
-    schema = {
-        "type": "object",
-        "properties": {
-            "disease": {"type": "string", "title": "Bệnh"},
-            "clinic": {"type": "string", "title": "Khoa/Phòng khám"},
-            "patient_name": {"type": "string", "title": "Tên bệnh nhân"},
-            "selected_slot_id": {"type": "string", "title": "Mã lịch đã chọn"},
-            "available_slots": {
-                "type": "array",
-                "title": "Các lịch khả dụng (chọn một bằng mã)",
-                "items": {
-                    "type": "object",
-                    "properties": {
-                        "slot_id": {"type": "string", "title": "Mã lịch"},
-                        "date": {"type": "string", "title": "Ngày"},
-                        "note": {"type": "string", "title": "Mô tả lịch"},
-                        "clinic": {"type": "string", "title": "Khoa khám"},
-                        "disease": {"type": "string", "title": "Bệnh"},
-                    },
-                    "required": ["slot_id", "date", "note"]
-                }
-            }
-        },
-        "required": ["disease", "clinic", "available_slots", "selected_slot_id", "patient_name"]
-    }
-
-
-    return json.dumps({
-        "type": "form",
-        "form": schema,
-        "form_data": form,
-        "instructions": instructions
-    })
-
-def book_slot(selected_slot_id: str, patient_name: str) -> dict[str, Any]:
-    if not selected_slot_id or not patient_name:
-        return {"status": "error", "message": "Missing selected_slot_id or patient_name"}
-    return {
-        "status": "confirmed",
-        "confirmation_id": f"BK{random.randint(100000,999999)}",
-        "selected_slot_id": selected_slot_id,
-        "patient_name": patient_name
-    }
-
-def return_schedule_form(form: dict[str, Any], tool_context: ToolContext):
-    return _return_form(
-        form,
-        tool_context,
-        "Chọn một vị trí theo ID và điền tên của bạn. "
-        "Bạn có thể thay đổi ngày bằng cách chỉnh sửa 'vị trí' hoặc gửi ngày mới mong muốn."
-    )
 class SchedulingAgent:
     SUPPORTED_CONTENT_TYPES = ["text", "text/plain"]
 
@@ -131,16 +78,14 @@ class SchedulingAgent:
             model="gemini-2.0-flash-001",
             name="de_xuat_va_dat_lich",
             description="Gợi ý lịch hẹn và đặt lịch hẹn với biểu mẫu có thể chỉnh sửa.",
-            instruction="""
-            Bạn lên lịch hẹn khám bệnh.
-            Quy trình làm việc:
-            1) Nếu người dùng nêu tên bệnh (và tùy chọn ngày ưu tiên), hãy gọi propose_slots(disease, preferred_date?).
-            2) Ngay lập tức gọi return_schedule_form để hiển thị biểu mẫu có thể chỉnh sửa với danh sách 'available_slots', cùng 'selected_slot_id' và 'patient_name' để người dùng điền/chọn.
-            3) Khi người dùng gửi biểu mẫu đã điền đầy đủ (có selected_slot_id + patient_name), hãy gọi book_slot(selected_slot_id, patient_name).
-            4) Trả lời bằng một xác nhận đặt lịch ngắn gọn (status, confirmation_id).
+            instruction = """
+            You are a scheduling tool for medical appointments.
+            1) Always call default_schedule(disease, patient_name).
+            2) If disease or patient_name is missing, pass an empty string "".
+            3) Always return a fixed confirmation (status, confirmation_id, date, note).
+            4) Do not ask the user any follow-up questions.
+            """
+            ,
 
-            Nếu thiếu disease, hãy hỏi ngắn gọn về bệnh đó.
-            """,
-
-            tools=[propose_slots, return_schedule_form, book_slot],
+            tools=[propose_slots],
         )

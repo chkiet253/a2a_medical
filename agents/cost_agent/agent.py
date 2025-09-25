@@ -1,4 +1,5 @@
 import json
+import os
 from typing import Any, AsyncIterable, Dict
 from google.adk.agents.llm_agent import LlmAgent
 from google.adk.tools.tool_context import ToolContext
@@ -8,46 +9,30 @@ from google.adk.runners import Runner
 from google.adk.sessions import InMemorySessionService
 from google.genai import types
 
-# ---- Helper để trả form ----
-# def _return_form(form: dict[str, Any], tool_context: ToolContext, instructions: str = "") -> str:
-#     tool_context.actions.skip_summarization = True
-#     tool_context.actions.escalate = True
-#     schema = {
-#         "type": "object",
-#         "properties": {
-#             "benh": {"type": "string", "title": "Bệnh"},
-#             "chi_phi": {"type": "string", "title": "Chi phí (VND)"},
-#             "tong": {"type": "string", "title": "Tổng cộng (VND)"}
-#         },
-#         "required": ["benh", "chi_phi", "tong"]
-#     }
-#     return json.dumps({
-#         "type": "form",
-#         "form": schema,
-#         "form_data": form,
-#         "instructions": instructions
-#     })
+# ---- Load dữ liệu gói khám từ JSON ----
+def _load_packages(filename: str = "goi_kham_vip_2025.json") -> dict:
+    base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "data"))
+    path = os.path.join(base_dir, filename)
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
 
-# ---- Bảng giá mẫu ----
-_PRICE_TABLE = {
-    "tiểu đường": 750000,
-    "cao huyết áp": 450000,
-    "cúm": 250000,
-}
+_PACKAGES = _load_packages()["packages"]
 
-# ---- Tool tính chi phí ----
-def estimate_cost(disease: str) -> dict[str, Any]:
-    key = disease.strip().lower()
-    total = _PRICE_TABLE.get(key, 100000)  # mặc định 100k
-    return {
-        "benh": disease,
-        "chi_phi": str(total),
-        "tong": str(total)
-    }
+# ---- Tool tính chi phí gói khám ----
+def estimate_cost(name: str, gender: str) -> str:
+    # Nếu thiếu gender, model vẫn có thể gửi ""
+    if not gender:
+        gender = "nam"
 
-# ---- Tool trả form ----
-# def return_cost_form(form: dict, tool_context: ToolContext):
-#     return _return_form(form, tool_context, "Bạn có thể điều chỉnh chi phí trước khi xác nhận.")
+    for pkg in _PACKAGES:
+        if pkg["name"].lower() == name.strip().lower():
+            if isinstance(pkg["price"], dict):
+                price = pkg["price"].get(gender, pkg["price"].get("nam", "N/A"))
+            else:
+                price = pkg["price"]
+            return price
+    return "Không tìm thấy gói khám"
+
 
 # ---- Agent chính ----
 class CostAgent:
@@ -96,21 +81,20 @@ class CostAgent:
                     response = next((p.function_response.model_dump() for p in event.content.parts))
                 yield {"is_task_complete": True, "content": response}
             else:
-                yield {"is_task_complete": False, "updates": "Estimating medical costs..."}
+                yield {"is_task_complete": False, "updates": "Đang tính toán chi phí gói khám..."}
 
     def _build_agent(self) -> LlmAgent:
         return LlmAgent(
             model="gemini-2.0-flash-001",
             name="agent_chi_phi",
-            description="Trả về bảng chi phí y tế đơn giản cho một bệnh.",
-            instruction="""
-    Bạn là công cụ ước tính chi phí y tế.
-    1) Nếu người dùng cung cấp tên bệnh (ví dụ: 'cúm', 'tiểu đường'),
-    hãy gọi hàm estimate_cost(benh).
-    2) Luôn trả về kết quả trực tiếp (dict có benh, chi_phi, tong).
-    3) Không cần biểu mẫu chỉnh sửa.
-    4) Nếu thiếu tên bệnh thì hãy hỏi lại ngắn gọn.
-            """,
+            description="Trả về bảng chi phí và danh sách dịch vụ trong gói khám.",
+            instruction = """
+            You are a medical cost estimation tool for health checkup packages.
+            1) Always call estimate_cost(name, gender).
+            2) If gender is not provided by the user, pass an empty string "".
+            3) Always return ONLY the cost (string in VND).
+            4) If the package is not found, return 'Không tìm thấy gói khám'.
+            """
+            ,
             tools=[estimate_cost],
         )
-

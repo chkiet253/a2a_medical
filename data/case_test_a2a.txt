@@ -1,0 +1,106 @@
+Tuyệt 👌. Dựa vào dữ liệu JSON gói khám bạn vừa đưa, mình viết lại bộ **test case A2A** chuẩn hơn (gắn đúng giá, đúng giới tính `nam`/`nữ` trong file).
+
+---
+
+## 🔬 Test Case A2A (theo dữ liệu gói khám)
+
+### 1. **Cost Agent**
+
+* **Case 1.1**: hỏi chi phí gói không phân biệt giới tính
+
+  * Input: *“Chi phí gói khám tổng quát cơ bản”*
+  * Expected: `4,000,000 VND`
+
+* **Case 1.2**: hỏi chi phí gói có phân biệt giới tính (nam)
+
+  * Input: *“Chi phí gói khám tổng quát nâng cao cho nam”*
+  * Expected: `7,000,000 VND`
+
+* **Case 1.3**: hỏi chi phí gói có phân biệt giới tính (nữ)
+
+  * Input: *“Chi phí gói khám tổng quát nâng cao cho nữ”*
+  * Expected: `7,500,000 VND`
+
+* **Case 1.4**: hỏi gói không tồn tại
+
+  * Input: *“Chi phí gói khám tim mạch nâng cao”*
+  * Expected: `"Không tìm thấy gói khám"`
+
+---
+
+### 2. **Schedule Agent (default mode)**
+
+* **Case 2.1**: đặt lịch với bệnh cụ thể
+
+  * Input: *“Đặt lịch khám bệnh tiểu đường cho tôi”*
+  * Expected: JSON confirmed, ví dụ:
+
+    ```json
+    {
+      "status": "confirmed",
+      "confirmation_id": "BK-20250925",
+      "disease": "tiểu đường",
+      "patient_name": "Nguyễn Văn A",
+      "date": "2025-09-25",
+      "note": "Lịch mặc định lúc 9:00 sáng"
+    }
+    ```
+
+* **Case 2.2**: đặt lịch mà không ghi rõ bệnh
+
+  * Input: *“Đặt lịch cho tôi”*
+  * Expected: vẫn confirmed với disease mặc định `"Khám tổng quát"`.
+
+---
+
+### 3. **Diagnose Agent (giả định đơn giản)**
+
+*(chưa có file JSON bệnh nên chỉ test mô phỏng)*
+
+* **Case 3.1**: triệu chứng ho sốt
+
+  * Input: *“Tôi bị ho, sốt, đau họng.”*
+  * Expected: DiagnoseAgent → `"Có thể là cúm"`
+
+---
+
+### 4. **Multi-agent phối hợp**
+
+* **Case 4.1**: Diagnose + Cost
+
+  * Input: *“Tôi bị chóng mặt, hãy cho tôi biết bệnh gì và chi phí khám.”*
+  * Expected:
+
+    * DiagnoseAgent → `"Có thể bạn bị cao huyết áp"`
+    * CostAgent → `"Không tìm thấy gói khám"` (vì không có trong JSON)
+
+* **Case 4.2**: Diagnose + Schedule
+
+  * Input: *“Tôi bị ho sốt, hãy chuẩn đoán và đặt lịch khám.”*
+  * Expected:
+
+    * DiagnoseAgent → `"Có thể là cúm"`
+    * ScheduleAgent → confirmed default schedule
+
+* **Case 4.3**: Cost + Schedule
+
+  * Input: *“Chi phí gói khám tổng quát cơ bản và đặt lịch cho tôi luôn.”*
+  * Expected:
+
+    * CostAgent → `"4,000,000 VND"`
+    * ScheduleAgent → confirmed default schedule
+
+* **Case 4.4**: Full pipeline (Diagnose + Cost + Schedule)
+
+  * Input: *“Tôi bị mệt mỏi, nhức đầu. Hãy chuẩn đoán, cho tôi chi phí khám và đặt lịch.”*
+  * Expected:
+
+    * DiagnoseAgent → `"Có thể liên quan đến tiểu đường"`
+    * CostAgent → `"Không tìm thấy gói khám"` (trừ khi thêm gói "tiểu đường" vào JSON)
+    * ScheduleAgent → confirmed default schedule
+
+---
+
+👉 Các case này bạn có thể convert thành **pytest** test function hoặc viết thành file `test_cases.md` để chạy demo A2A trong UI.
+
+Bạn muốn mình viết sẵn file `test_cases.md` (Notion-style, kịch bản hội thoại) hay file **pytest** code để test tự động bằng Python?

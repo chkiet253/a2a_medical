@@ -1,0 +1,62 @@
+{
+    "packages": [
+        {
+            "name": "Gói khám tổng quát cơ bản",
+            "price": "4,000,000 VND",
+            "items": [
+                {
+                    "id": 1,
+                    "name": "Bác sĩ khám tổng quát",
+                    "count": 1
+                },
+                {
+                    "id": 2,
+                    "name": "Tổng phân tích tế bào máu ngoại vi (bằng máy đếm laser)",
+                    "count": 1
+                },
+                {
+                    "id": 3,
+                    "name": "Định lượng Glucose [máu]",
+                    "count": 1
+                },
+                {
+                    "id": 4,
+                    "name": "Định lượng HbA1c [máu]",
+                    "count": 1
+                },
+                {
+                    "id": 5,
+                    "name": "Định lượng Cholesterol toàn phần [máu]",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "name": "Gói khám tổng quát nâng cao",
+            "price": {
+                "nam": "7,000,000 VND",
+                "nữ": "7,500,000 VND"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "name": "Gói 1",
+                    "nam": true,
+                    "nữ": true
+                },
+                {
+                    "id": 2,
+                    "name": "HBsAg miễn dịch tự động",
+                    "nam": true,
+                    "nữ": true
+                },
+                {
+                    "id": 3,
+                    "name": "HBsAb định lượng",
+                    "nam": true,
+                    "nữ": true
+                }
+            ]
+        }
+    ]
+}

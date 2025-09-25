@@ -1,56 +1,94 @@
-import traceback
-
-from collections.abc import Callable
-
-from common.client import (
-    Client,
-    ClientFactory,
-)
+from typing import Callable
+import uuid
 from common.types import (
     AgentCard,
-    Message,
     Task,
-    TaskArtifactUpdateEvent,
-    TaskState,
+    TaskSendParams,
     TaskStatusUpdateEvent,
+    TaskArtifactUpdateEvent,
+    TaskStatus,
+    TaskState,
 )
-
+from common.client import A2AClient
 
 TaskCallbackArg = Task | TaskStatusUpdateEvent | TaskArtifactUpdateEvent
-TaskUpdateCallback = Callable[[TaskCallbackArg, AgentCard], Task]
-
+TaskUpdateCallback = Callable[[TaskCallbackArg], Task]
 
 class RemoteAgentConnections:
-    """A class to hold the connections to the remote agents."""
+  """A class to hold the connections to the remote agents."""
 
-    def __init__(self, client_factory: ClientFactory, agent_card: AgentCard):
-        self.agent_client: Client = client_factory.create(agent_card)
-        self.card: AgentCard = agent_card
-        self.pending_tasks = set()
+  def __init__(self, agent_card: AgentCard):
+    self.agent_client = A2AClient(agent_card)
+    self.card = agent_card
 
-    def get_agent(self) -> AgentCard:
-        return self.card
+    self.conversation_name = None
+    self.conversation = None
+    self.pending_tasks = set()
 
-    async def send_message(self, message: Message) -> Task | Message | None:
-        lastTask: Task | None = None
-        try:
-            async for event in self.agent_client.send_message(message):
-                if isinstance(event, Message):
-                    return event
-                if self.is_terminal_or_interrupted(event[0]):
-                    return event[0]
-                lastTask = event[0]
-        except Exception as e:
-            print('Exception found in send_message')
-            traceback.print_exc()
-            raise e
-        return lastTask
+  def get_agent(self) -> AgentCard:
+    return self.card
 
-    def is_terminal_or_interrupted(self, task: Task) -> bool:
-        return task.status.state in [
-            TaskState.completed,
-            TaskState.canceled,
-            TaskState.failed,
-            TaskState.input_required,
-            TaskState.unknown,
-        ]
+  async def send_task(
+      self,
+      request: TaskSendParams,
+      task_callback: TaskUpdateCallback | None,
+  ) -> Task | None:
+    if self.card.capabilities.streaming:
+      task = None
+      if task_callback:
+        task_callback(Task(
+            id=request.id,
+            sessionId=request.sessionId,
+            status=TaskStatus(
+                state=TaskState.SUBMITTED,
+                message=request.message,
+            ),
+            history=[request.message],
+        ))
+      async for response in self.agent_client.send_task_streaming(request.model_dump()):
+        merge_metadata(response.result, request)
+        # For task status updates, we need to propagate metadata and provide
+        # a unique message id.
+        if (hasattr(response.result, 'status') and
+            hasattr(response.result.status, 'message') and
+            response.result.status.message):
+          merge_metadata(response.result.status.message, request.message)
+          m = response.result.status.message
+          if not m.metadata:
+            m.metadata = {}
+          if 'message_id' in m.metadata:
+            m.metadata['last_message_id'] = m.metadata['message_id']
+          m.metadata['message_id'] = str(uuid.uuid4())
+        if task_callback:
+          task = task_callback(response.result)
+        if hasattr(response.result, 'final') and response.result.final:
+          break
+      return task
+    else: # Non-streaming
+      response = await self.agent_client.send_task(request.model_dump())
+      merge_metadata(response.result, request)
+      # For task status updates, we need to propagate metadata and provide
+      # a unique message id.
+      if (hasattr(response.result, 'status') and
+          hasattr(response.result.status, 'message') and
+          response.result.status.message):
+        merge_metadata(response.result.status.message, request.message)
+        m = response.result.status.message
+        if not m.metadata:
+          m.metadata = {}
+        if 'message_id' in m.metadata:
+          m.metadata['last_message_id'] = m.metadata['message_id']
+        m.metadata['message_id'] = str(uuid.uuid4())
+
+      if task_callback:
+        task_callback(response.result)
+      return response.result
+
+def merge_metadata(target, source):
+  if not hasattr(target, 'metadata') or not hasattr(source, 'metadata'):
+    return
+  if target.metadata and source.metadata:
+    target.metadata.update(source.metadata)
+  elif source.metadata:
+    target.metadata = dict(**source.metadata)
+

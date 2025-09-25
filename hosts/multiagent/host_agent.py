@@ -1,32 +1,38 @@
+import sys
 import asyncio
-import base64
+import functools
 import json
-import os
+from typing import Any, AsyncIterable, Dict, Optional
 import uuid
+import threading
+#from google.adk.models.lite_llm import LiteLlm
+from typing import List, Optional, Callable
 
-import httpx
-
-from a2a.client import A2ACardResolver, ClientConfig, ClientFactory
-from a2a.types import (
-    AgentCard,
-    DataPart,
-    Message,
-    Part,
-    Role,
-    Task,
-    TaskState,
-    TextPart,
-    TransportProtocol,
-)
-from google.adk import Agent
-from google.adk.agents.callback_context import CallbackContext
-from google.adk.agents.readonly_context import ReadonlyContext
-from google.adk.models.lite_llm import LiteLlm
-from google.adk.tools.tool_context import ToolContext
 from google.genai import types
-from remote_agent_connection import RemoteAgentConnections, TaskUpdateCallback
-from timestamp_ext import TimestampExtension
-
+import base64
+from google.adk.agents.llm_agent import LlmAgent
+from google.adk import Agent
+from google.adk.agents.invocation_context import InvocationContext
+from google.adk.agents.readonly_context import ReadonlyContext
+from google.adk.agents.callback_context import CallbackContext
+from google.adk.tools.tool_context import ToolContext
+from .remote_agent_connection import (
+    RemoteAgentConnections,
+    TaskUpdateCallback
+)
+from common.client import A2ACardResolver
+from common.types import (
+    AgentCard,
+    Message,
+    TaskState,
+    Task,
+    TaskSendParams,
+    TextPart,
+    DataPart,
+    Part,
+    TaskStatusUpdateEvent,
+)
+from .routing import decide_route
 
 class HostAgent:
     """The host agent.
@@ -35,52 +41,29 @@ class HostAgent:
     tasks to and coordinate their work.
     """
 
+    SUPPORTED_CONTENT_TYPES = ["text", "text/plain"]
+
     def __init__(
-        self,
-        remote_agent_addresses: list[str],
-        http_client: httpx.AsyncClient,
-        task_callback: TaskUpdateCallback | None = None,
+            self,
+            remote_agent_addresses: List[str],
+            task_callback: TaskUpdateCallback | None = None
     ):
         self.task_callback = task_callback
-        self.httpx_client = http_client
-        self.timestamp_extension = TimestampExtension()
-        config = ClientConfig(
-            httpx_client=self.httpx_client,
-            supported_transports=[
-                TransportProtocol.jsonrpc,
-                TransportProtocol.http_json,
-            ],
-        )
-        client_factory = ClientFactory(config)
-        client_factory = self.timestamp_extension.wrap_client_factory(
-            client_factory
-        )
-        self.client_factory = client_factory
         self.remote_agent_connections: dict[str, RemoteAgentConnections] = {}
         self.cards: dict[str, AgentCard] = {}
-        self.agents: str = ''
-        loop = asyncio.get_running_loop()
-        loop.create_task(
-            self.init_remote_agent_addresses(remote_agent_addresses)
-        )
-
-    async def init_remote_agent_addresses(
-        self, remote_agent_addresses: list[str]
-    ):
-        async with asyncio.TaskGroup() as task_group:
-            for address in remote_agent_addresses:
-                task_group.create_task(self.retrieve_card(address))
-        # The task groups run in the background and complete.
-        # Once completed the self.agents string is set and the remote
-        # connections are established.
-
-    async def retrieve_card(self, address: str):
-        card_resolver = A2ACardResolver(self.httpx_client, address)
-        card = await card_resolver.get_agent_card()
-        self.register_agent_card(card)
+        for address in remote_agent_addresses:
+            card_resolver = A2ACardResolver(address)
+            card = card_resolver.get_agent_card()
+            remote_connection = RemoteAgentConnections(card)
+            self.remote_agent_connections[card.name] = remote_connection
+            self.cards[card.name] = card
+        agent_info = []
+        for ra in self.list_remote_agents():
+            agent_info.append(json.dumps(ra))
+        self.agents = '\n'.join(agent_info)
 
     def register_agent_card(self, card: AgentCard):
-        remote_connection = RemoteAgentConnections(self.client_factory, card)
+        remote_connection = RemoteAgentConnections(card)
         self.remote_agent_connections[card.name] = remote_connection
         self.cards[card.name] = card
         agent_info = []
@@ -88,64 +71,65 @@ class HostAgent:
             agent_info.append(json.dumps(ra))
         self.agents = '\n'.join(agent_info)
 
-    def create_agent(self) -> Agent:
-        LITELLM_MODEL = os.getenv(
-            'LITELLM_MODEL', 'gemini/gemini-2.0-flash-001'
-        )
-        return Agent(
-            model=LiteLlm(model=LITELLM_MODEL),
-            name='host_agent',
+    def create_agent(self) -> LlmAgent:
+        return LlmAgent(
+            model="gemini-2.0-flash-001",
+            # model=LiteLlm("openai/meta-llama/Llama-3.1-8B-Instruct"),
+            name="host_agent",
             instruction=self.root_instruction,
             before_model_callback=self.before_model_callback,
             description=(
-                'This agent orchestrates the decomposition of the user request into'
-                ' tasks that can be performed by the child agents.'
+                "This agent orchestrates the decomposition of the user request into"
+                " tasks that can be performed by the child agents."
             ),
             tools=[
                 self.list_remote_agents,
-                self.send_message,
+                self.send_task,
             ],
         )
 
     def root_instruction(self, context: ReadonlyContext) -> str:
         current_agent = self.check_state(context)
-        return f"""You are an expert delegator that can delegate the user request to the
-appropriate remote agents.
+        return f"""
+You are the HostAgent, acting like a medical secretary. 
+You receive user input in either English or Vietnamese.
 
-Discovery:
-- You can use `list_remote_agents` to list the available remote agents you
-can use to delegate the task.
+Rules:
+- Always analyze the user input (can be English).
+- Decide which agents to call: Diagnose, Cost, Schedule.
+- You may call multiple agents in parallel or in sequence (chain).
+- If the user already states a disease, skip Diagnose and go directly to Cost/Schedule.
+- If the user only gives symptoms, call Diagnose first, then send the result to Cost and/or Schedule.
+- Combine the outputs into one final answer.
 
-Execution:
-- For actionable requests, you can use `send_message` to interact with remote agents to take action.
+IMPORTANT:
+- The final response to the user must ALWAYS be in Vietnamese, 
+  even if the prompt or user input is in English.
+- Never ask the user if they want to call another agent. 
+  Decide automatically based on context.
 
-Be sure to include the remote agent name when you respond to the user.
-
-Please rely on tools to address the request, and don't make up the response. If you are not sure, please ask the user for more details.
-Focus on the most recent parts of the conversation primarily.
-
-Agents:
+Agents available:
 {self.agents}
 
 Current agent: {current_agent['active_agent']}
-"""
+    """
+
+
 
     def check_state(self, context: ReadonlyContext):
         state = context.state
-        if (
-            'context_id' in state
-            and 'session_active' in state
-            and state['session_active']
-            and 'agent' in state
-        ):
-            return {'active_agent': f'{state["agent"]}'}
-        return {'active_agent': 'None'}
+        if ('session_id' in state and
+                'session_active' in state and
+                state['session_active'] and
+                'agent' in state):
+            return {"active_agent": f'{state["agent"]}'}
+        return {"active_agent": "None"}
 
-    def before_model_callback(
-        self, callback_context: CallbackContext, llm_request
-    ):
+    def before_model_callback(self, callback_context: CallbackContext, llm_request):
         state = callback_context.state
         if 'session_active' not in state or not state['session_active']:
+            if 'session_id' not in state:
+                state['session_id'] = str(uuid.uuid4())
             state['session_active'] = True
 
     def list_remote_agents(self):
@@ -156,13 +140,15 @@ Current agent: {current_agent['active_agent']}
         remote_agent_info = []
         for card in self.cards.values():
             remote_agent_info.append(
-                {'name': card.name, 'description': card.description}
+                {"name": card.name, "description": card.description}
             )
         return remote_agent_info
 
-    async def send_message(
-        self, agent_name: str, message: str, tool_context: ToolContext
-    ):
+    async def send_task(
+            self,
+            agent_name: str,
+            message: str,
+            tool_context: ToolContext):
         """Sends a task either streaming (if supported) or non-streaming.
 
         This will send a message to the remote agent named agent_name.
@@ -175,95 +161,123 @@ Current agent: {current_agent['active_agent']}
         Yields:
           A dictionary of JSON data.
         """
+        print(agent_name)
         if agent_name not in self.remote_agent_connections:
-            raise ValueError(f'Agent {agent_name} not found')
+            raise ValueError(f"Agent {agent_name} not found")
         state = tool_context.state
         state['agent'] = agent_name
+        card = self.cards[agent_name]
         client = self.remote_agent_connections[agent_name]
         if not client:
-            raise ValueError(f'Client not available for {agent_name}')
-        task_id = state.get('task_id', None)
-        context_id = state.get('context_id', None)
-        message_id = state.get('message_id', None)
+            raise ValueError(f"Client not available for {agent_name}")
+        if 'task_id' in state:
+            taskId = state['task_id']
+        else:
+            taskId = str(uuid.uuid4())
+        sessionId = state['session_id']
         task: Task
-        if not message_id:
-            message_id = str(uuid.uuid4())
-
-        request_message = Message(
-            role=Role.user,
-            parts=[Part(root=TextPart(text=message))],
-            message_id=message_id,
-            context_id=context_id,
-            task_id=task_id,
+        messageId = ""
+        metadata = {}
+        if 'input_message_metadata' in state:
+            metadata.update(**state['input_message_metadata'])
+            if 'message_id' in state['input_message_metadata']:
+                messageId = state['input_message_metadata']['message_id']
+        if not messageId:
+            messageId = str(uuid.uuid4())
+        metadata.update(**{'conversation_id': sessionId, 'message_id': messageId})
+        request: TaskSendParams = TaskSendParams(
+            id=taskId,
+            sessionId=sessionId,
+            message=Message(
+                role="user",
+                parts=[TextPart(text=message)],
+                metadata=metadata,
+            ),
+            acceptedOutputModes=["text", "text/plain", "image/png"],
+            # pushNotification=None,
+            metadata={'conversation_id': sessionId},
         )
-        response = await client.send_message(request_message)
-        if isinstance(response, Message):
-            return await convert_parts(response.parts, tool_context)
-        task: Task = response
+        task = await client.send_task(request, self.task_callback)
         # Assume completion unless a state returns that isn't complete
         state['session_active'] = task.status.state not in [
-            TaskState.completed,
-            TaskState.canceled,
-            TaskState.failed,
-            TaskState.unknown,
+            TaskState.COMPLETED,
+            TaskState.CANCELED,
+            TaskState.FAILED,
+            TaskState.UNKNOWN,
         ]
-        if task.context_id:
-            state['context_id'] = task.context_id
-        state['task_id'] = task.id
-        if task.status.state == TaskState.input_required:
-            # Force user input back
-            tool_context.actions.skip_summarization = True
-            tool_context.actions.escalate = True
-        elif task.status.state == TaskState.canceled:
+        if task.status.state == TaskState.INPUT_REQUIRED:
+            # Thay vì hỏi lại user, tự động coi như task đã chạy xong hoặc nối kết quả luôn
+            return [{"text": "Agent yêu cầu thêm dữ liệu, HostAgent sẽ tự động tiếp tục xử lý."}]
+            #tool_context.actions.escalate = True
+        elif task.status.state == TaskState.CANCELED:
             # Open question, should we return some info for cancellation instead
-            raise ValueError(f'Agent {agent_name} task {task.id} is cancelled')
-        elif task.status.state == TaskState.failed:
+            raise ValueError(f"Agent {agent_name} task {task.id} is cancelled")
+        elif task.status.state == TaskState.FAILED:
             # Raise error for failure
-            raise ValueError(f'Agent {agent_name} task {task.id} failed')
+            raise ValueError(f"Agent {agent_name} task {task.id} failed")
         response = []
         if task.status.message:
             # Assume the information is in the task message.
-            if ts := self.timestamp_extension.get_timestamp(
-                task.status.message
-            ):
-                response.append(f'[at {ts.astimezone().isoformat()}]')
-            response.extend(
-                await convert_parts(task.status.message.parts, tool_context)
-            )
+            response.extend(convert_parts(task.status.message.parts, tool_context))
         if task.artifacts:
             for artifact in task.artifacts:
-                if ts := self.timestamp_extension.get_timestamp(artifact):
-                    response.append(f'[at {ts.astimezone().isoformat()}]')
-                response.extend(
-                    await convert_parts(artifact.parts, tool_context)
-                )
+                response.extend(convert_parts(artifact.parts, tool_context))
         return response
 
+    async def send_message(self, message: str, tool_context: ToolContext):
+        """
+        Dùng routing để chọn agent phù hợp, có thể gọi song song hoặc chain.
+        """
 
-async def convert_parts(parts: list[Part], tool_context: ToolContext):
+        decision = decide_route(message)
+        responses = []
+
+        if decision.chained:
+            # chain: ví dụ diagnose -> cost -> schedule
+            first = decision.agents[0]
+            first_resp = await self.send_task(first, message, tool_context)
+            responses.append(f"{first}: {first_resp}")
+
+            followup_input = str(first_resp)
+            for agent in decision.agents[1:]:
+                followup_resp = await self.send_task(agent, followup_input, tool_context)
+                responses.append(f"{agent}: {followup_resp}")
+
+        else:
+            # chạy song song nhiều agent
+            tasks = [
+                self.send_task(agent, message, tool_context)
+                for agent in decision.agents
+            ]
+            results = await asyncio.gather(*tasks)
+            for agent, result in zip(decision.agents, results):
+                responses.append(f"{agent}: {result}")
+
+        return "\n".join(map(str, responses))
+
+def convert_parts(parts: list[Part], tool_context: ToolContext):
     rval = []
     for p in parts:
-        rval.append(await convert_part(p, tool_context))
+        rval.append(convert_part(p, tool_context))
     return rval
 
 
-async def convert_part(part: Part, tool_context: ToolContext):
-    if part.root.kind == 'text':
-        return part.root.text
-    if part.root.kind == 'data':
-        return part.root.data
-    if part.root.kind == 'file':
+def convert_part(part: Part, tool_context: ToolContext):
+    if part.type == "text":
+        return part.text
+    elif part.type == "data":
+        return part.data
+    elif part.type == "file":
         # Repackage A2A FilePart to google.genai Blob
         # Currently not considering plain text as files
-        file_id = part.root.file.name
-        file_bytes = base64.b64decode(part.root.file.bytes)
+        file_id = part.file.name
+        file_bytes = base64.b64decode(part.file.bytes)
         file_part = types.Part(
             inline_data=types.Blob(
-                mime_type=part.root.file.mime_type, data=file_bytes
-            )
-        )
-        await tool_context.save_artifact(file_id, file_part)
+                mime_type=part.file.mimeType,
+                data=file_bytes))
+        tool_context.save_artifact(file_id, file_part)
         tool_context.actions.skip_summarization = True
         tool_context.actions.escalate = True
-        return DataPart(data={'artifact-file-id': file_id})
-    return f'Unknown type: {part.kind}'
+        return DataPart(data={"artifact-file-id": file_id})
+    return f"Unknown type: {p.type}"
