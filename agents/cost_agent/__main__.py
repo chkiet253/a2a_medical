@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 
 @click.command()
 @click.option("--host", default="localhost")
-@click.option("--port", default=10003)
+@click.option("--port", default=10002)
 def main(host, port):
     try:
         capabilities = AgentCapabilities(streaming=True)

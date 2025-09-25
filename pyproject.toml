@@ -1,9 +1,10 @@
 [project]
-name = "a2a-samples"
+name = "a2a"
 version = "0.1.0"
-description = "Agent2Agent samples"
+description = "Agent2Agent"
 readme = "README.md"
 requires-python = ">=3.10.10"
+
 dependencies = [
     "asyncclick>=8.1.8",
     "asyncio>=3.4.3",
@@ -21,8 +22,6 @@ dependencies = [
     "google-adk>=0.0.3",
     "jwcrypto>=1.5.6",
     "pyjwt>=2.10.1",
-
-    # --- mới thêm ---
     "qdrant-client>=1.12.0",
     "FlagEmbedding>=1.2.10",
     "sentence-transformers>=2.7.0",
@@ -38,8 +37,8 @@ packages = ["common", "hosts"]
 
 [tool.uv.workspace]
 members = [
-    "agents/crewai",
     "hosts/a2a_multiagent_host",
+    "demo/ui/a2a-ui",
 ]
 
 [build-system]
