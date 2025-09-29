@@ -2,7 +2,6 @@ from __future__ import annotations
 import os, requests
 from typing import List, Dict, Any
 
-# Prompt builder (RAG VN)
 SYSTEM_PROMPT = (
     "Bạn là bác sĩ chuẩn đoán. NHIỆM VỤ: đưa ra MỘT chẩn đoán duy nhất dựa trên Context. "
     "Không bịa. Nếu không đủ dữ kiện, trả lời: 'Không đủ thông tin trong nguồn'."
@@ -34,78 +33,41 @@ def build_prompt(user_q: str, contexts: list[str]) -> list[dict]:
     ]
 
 # LLM
+import os
+import requests
+from typing import List, Dict
+
 class LLMGenerator:
     """
-    Chỉ dùng Gemma, chọn backend theo .env:
-      - LLM_PROVIDER=groq       -> gemma2-9b-it (Groq)
-      - LLM_PROVIDER=openrouter -> google/gemma-2-9b-it:free (OpenRouter)
-      - LLM_PROVIDER=ollama     -> gemma2:9b-instruct (Ollama)
-    Bạn có thể override base qua .env nếu cần, nhưng KHÔNG cần chỉ định model nữa.
+    Dùng 1 backend (Groq).
+    - Model và API key đọc từ .env
     """
-    def __init__(self, temperature: float = 0.2, provider: str | None = None, **_):
+    def __init__(self, temperature: float = 0.2):
         self.temperature = float(temperature)
-        self.provider = (provider or os.getenv("LLM_PROVIDER", "groq")).lower()
+        self.base = "https://api.groq.com/openai/v1"
+        self.api_key = os.getenv("GROQ_API_KEY")
+        self.model = os.getenv("LLM_MODEL", "llama-3.1-8b-instruct")
 
-        # bases & keys
-        self.groq_base        = os.getenv("GROQ_BASE", "https://api.groq.com/openai/v1")
-        self.openrouter_base  = os.getenv("OPENROUTER_BASE", "https://openrouter.ai/api/v1")
-        self.ollama_base      = os.getenv("OLLAMA_BASE", "http://localhost:11434")
-        self.groq_key         = os.getenv("GROQ_API_KEY") or ""
-        self.openrouter_key   = os.getenv("OPENROUTER_API_KEY") or ""
-
-        # GEMMA cố định theo provider
-        self.model = {
-            "groq":       "gemma2-9b-it",
-            "openrouter": "google/gemma-2-9b-it:free",
-            "ollama":     "gemma2:9b-instruct",
-        }.get(self.provider)
-
-        if self.model is None:
-            raise ValueError(f"LLM_PROVIDER không hỗ trợ: {self.provider}. Hãy dùng groq | openrouter | ollama.")
+        if not self.api_key:
+            raise RuntimeError("Thiếu GROQ_API_KEY trong .env")
 
     def chat(self, messages: List[Dict[str, str]]) -> str:
-        if self.provider == "groq":
-            if not self.groq_key:
-                raise RuntimeError("GROQ_API_KEY trống trong .env")
-            r = requests.post(
-                f"{self.groq_base}/chat/completions",
-                headers={"Authorization": f"Bearer {self.groq_key}", "Content-Type": "application/json"},
-                json={"model": self.model, "messages": messages,
-                      "temperature": self.temperature, "stream": False},
-                timeout=120
-            )
-            r.raise_for_status()
-            return r.json()["choices"][0]["message"]["content"]
-
-        if self.provider == "openrouter":
-            if not self.openrouter_key:
-                raise RuntimeError("OPENROUTER_API_KEY trống trong .env")
-            r = requests.post(
-                f"{self.openrouter_base}/chat/completions",
-                headers={"Authorization": f"Bearer {self.openrouter_key}", "Content-Type": "application/json"},
-                json={"model": self.model, "messages": messages,
-                      "temperature": self.temperature, "stream": False},
-                timeout=120
-            )
-            r.raise_for_status()
-            return r.json()["choices"][0]["message"]["content"]
-
-        if self.provider == "ollama":
-            r = requests.post(
-                f"{self.ollama_base}/api/chat",
-                json={"model": self.model, "messages": messages,
-                      "stream": False, "options": {"temperature": self.temperature}},
-                timeout=120
-            )
-            r.raise_for_status()
-            data = r.json()
-            if isinstance(data, dict) and "message" in data and isinstance(data["message"], dict):
-                return data["message"].get("content", "")
-            if "choices" in data and data["choices"]:
-                return data["choices"][0]["message"]["content"]
-            raise RuntimeError(f"Ollama response không mong đợi: {data}")
-
-        raise ValueError(f"LLM_PROVIDER không hỗ trợ: {self.provider}")
+        r = requests.post(
+            f"{self.base}/chat/completions",
+            headers={
+                "Authorization": f"Bearer {self.api_key}",
+                "Content-Type": "application/json"
+            },
+            json={
+                "model": self.model,
+                "messages": messages,
+                "temperature": self.temperature,
+                "stream": False
+            },
+            timeout=120
+        )
+        r.raise_for_status()
+        return r.json()["choices"][0]["message"]["content"]
 
 # Agent (RAG answer)
 class DiagnosisAgent:

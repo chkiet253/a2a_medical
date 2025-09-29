@@ -1,3 +1,4 @@
+from __future__ import annotations
 import json
 from typing import AsyncIterable
 from common.types import (
@@ -18,15 +19,16 @@ from common.types import (
     SendTaskStreamingResponse,
 )
 from common.server.task_manager import InMemoryTaskManager
-from agent import SchedulingAgent
+from agent import BookingAgent
 import common.server.utils as utils
-from typing import Union
+from typing import Union, Optional, Dict
 import logging
+
 logger = logging.getLogger(__name__)
 
 class AgentTaskManager(InMemoryTaskManager):
 
-    def __init__(self, agent: SchedulingAgent):
+    def __init__(self, agent: BookingAgent):
         super().__init__()
         self.agent = agent
 
@@ -99,12 +101,12 @@ class AgentTaskManager(InMemoryTaskManager):
     ) -> None:
         task_send_params: TaskSendParams = request.params
         if not utils.are_modalities_compatible(
-            task_send_params.acceptedOutputModes, SchedulingAgent.SUPPORTED_CONTENT_TYPES
+            task_send_params.acceptedOutputModes, BookingAgent.SUPPORTED_CONTENT_TYPES
         ):
             logger.warning(
                 "Unsupported output mode. Received %s, Support %s",
                 task_send_params.acceptedOutputModes,
-                SchedulingAgent.SUPPORTED_CONTENT_TYPES,
+                BookingAgent.SUPPORTED_CONTENT_TYPES,
             )
             return utils.new_incompatible_types_error(request.id)
     async def on_send_task(self, request: SendTaskRequest) -> SendTaskResponse:
@@ -142,7 +144,7 @@ class AgentTaskManager(InMemoryTaskManager):
         task_send_params: TaskSendParams = request.params
         query = self._get_user_query(task_send_params)
         try:
-            result = await self.agent.invoke(query, task_send_params.sessionId)
+            result = self.agent.invoke(query, task_send_params.sessionId)
         except Exception as e:
             logger.error(f"Error invoking agent: {e}")
             raise ValueError(f"Error invoking agent: {e}")
