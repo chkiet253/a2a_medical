@@ -1,7 +1,7 @@
 from common.server import A2AServer
 from common.types import AgentCard, AgentCapabilities, AgentSkill, MissingAPIKeyError
 from task_manager import AgentTaskManager
-from agent import SchedulingAgent
+from agent import BookingAgent
 import click
 import logging
 from dotenv import load_dotenv
@@ -12,30 +12,30 @@ logger = logging.getLogger(__name__)
 
 @click.command()
 @click.option("--host", default="localhost")
-@click.option("--port", default=10003)
+@click.option("--port", default=10004)  
 def main(host, port):
     try:
         capabilities = AgentCapabilities(streaming=True)
         skill = AgentSkill(
-            id="de_xuat_va_dat_lich",
-            name="Agent Lên Lịch Khám Bệnh",
-            description="Đề xuất khung thời gian và đặt lịch hẹn cho một bệnh/khoa cụ thể; gửi lại biểu mẫu lên lịch có thể chỉnh sửa.",
-            tags=["lịch trình", "đặt chỗ", "cuộc hẹn"],
-            examples=["Đặt lịch khám bệnh tiểu đường cho tôi vào tuần tới."],
+            id="booking",
+            name="Agent Đặt lịch",
+            description="Đặt lịch khám, kiểm tra lịch trống, xác nhận và hủy lịch.",
+            tags=["booking", "schedule"],
+            examples=["Đặt lịch khám với bác sĩ A ngày 2025-10-05 lúc 9h."],
         )
         agent_card = AgentCard(
-            name="Agent Lên Lịch Khám Bệnh",
-            description="Gợi ý khung giờ và đặt lịch hẹn; người dùng có thể điều chỉnh ngày/giờ trước khi đặt lịch.",
+            name="Agent Đặt lịch",
+            description="Quản lý đặt lịch khám bệnh, kiểm tra lịch trống và gửi email xác nhận/hủy.",
             url=f"http://{host}:{port}/",
             version="1.0.0",
-            defaultInputModes=SchedulingAgent.SUPPORTED_CONTENT_TYPES,
-            defaultOutputModes=SchedulingAgent.SUPPORTED_CONTENT_TYPES,
+            defaultInputModes=BookingAgent.SUPPORTED_CONTENT_TYPES,
+            defaultOutputModes=BookingAgent.SUPPORTED_CONTENT_TYPES,
             capabilities=capabilities,
             skills=[skill],
         )
         server = A2AServer(
             agent_card=agent_card,
-            task_manager=AgentTaskManager(agent=SchedulingAgent()),
+            task_manager=AgentTaskManager(agent=BookingAgent()),
             host=host,
             port=port,
         )
@@ -48,5 +48,5 @@ def main(host, port):
         exit(1)
 
 if __name__ == "__main__":
-    print("Start SchedulingAgent")
+    print("Start BookingAgent")
     main()

@@ -465,4 +465,3 @@ def task_still_open(task: Task | None) -> bool:
   return task.status.state in [
       TaskState.SUBMITTED, TaskState.WORKING, TaskState.INPUT_REQUIRED
   ]
-

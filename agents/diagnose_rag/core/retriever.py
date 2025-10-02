@@ -7,7 +7,7 @@ from sentence_transformers import CrossEncoder
 class ViRanker:
     def __init__(self, model_name: str = "namdp-ptit/ViRanker"):
         device = "cuda" if torch.cuda.is_available() else "cpu"
-        self.model = CrossEncoder(model_name, device=device, automodel_args={"use_safetensors": True})
+        self.model = CrossEncoder(model_name, device=device, model_kwargs={"use_safetensors": True})
 
     def rerank(self, query: str, docs: List[Dict[str, Any]], top_k: int = 3) -> List[Dict[str, Any]]:
         if not docs:

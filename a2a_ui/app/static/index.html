@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>A2A Medical Assistant</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h2>🤖 Agents</h2>
+      <p>Diagnose, Cost, Booking, Host</p>
+    </div>
+    <div class="main-content">  
+      <div class="header"><h1>🏥 A2A Assistant</h1></div>
+      <div class="chat-container" id="chatContainer"></div>
+      <div class="input-area">
+        <input id="userInput" placeholder="Nhập câu hỏi..." onkeypress="handleKeyPress(event)">
+        <button onclick="sendMessage()">Gửi</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/js/utils.js"></script>
+  <script src="/static/js/chat.js"></script>
+  <script src="/static/js/form.js"></script>
+  <script src="/static/js/options.js"></script>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>
