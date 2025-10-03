@@ -1,17 +1,32 @@
 function renderOptions(optData) {
-    const chatContainer = document.getElementById("chatContainer");
-    const div = document.createElement("div");
-    div.className = "message agent";
-    div.innerHTML = `<strong>${optData.title}</strong><br>`;
-    optData.options.forEach(opt => {
-      div.innerHTML += `<button onclick="selectOption('${opt}')">${opt}</button><br>`;
+  const chatContainer = document.getElementById("chatContainer");
+  const div = document.createElement("div");
+  div.className = "message agent";
+  const kind = optData.kind || "option_select";
+  div.innerHTML = `<strong>${optData.title || "Chọn một tùy chọn"}</strong><br>`;
+
+  (optData.options || []).forEach(opt => {
+    const btn = document.createElement("button");
+    btn.textContent = typeof opt === "string" ? opt : (opt.label || JSON.stringify(opt));
+    btn.addEventListener("click", async () => {
+      const value = typeof opt === "string" ? opt : (opt.value ?? opt);
+      addMessage("user", btn.textContent);
+      try {
+        const res = await fetch("/api/submit", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ kind, values: { selection: value } })
+        });
+        const data = await res.json();
+        renderResponse(data);
+      } catch (e) {
+        addMessage("agent", "❌ Lỗi submit lựa chọn: " + (e?.message || e));
+      }
     });
-    chatContainer.appendChild(div);
-    chatContainer.scrollTop = chatContainer.scrollHeight;
-  }
-  
-  function selectOption(val) {
-    addMessage("user", val);
-    addMessage("agent", "✅ Đặt lịch thành công với: " + val);
-  }
-  
+    div.appendChild(btn);
+    div.appendChild(document.createElement("br"));
+  });
+
+  chatContainer.appendChild(div);
+  chatContainer.scrollTop = chatContainer.scrollHeight;
+}

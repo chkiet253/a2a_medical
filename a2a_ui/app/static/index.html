@@ -1,30 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
-<head>
-  <meta charset="UTF-8" />
-  <title>A2A Medical Assistant</title>
-  <link rel="stylesheet" href="/static/css/style.css" />
-</head>
-<body>
-  <div class="container">
-    <div class="sidebar">
-      <h2>🤖 Agents</h2>
-      <p>Diagnose, Cost, Booking, Host</p>
-    </div>
-    <div class="main-content">  
-      <div class="header"><h1>🏥 A2A Assistant</h1></div>
-      <div class="chat-container" id="chatContainer"></div>
-      <div class="input-area">
-        <input id="userInput" placeholder="Nhập câu hỏi..." onkeypress="handleKeyPress(event)">
-        <button onclick="sendMessage()">Gửi</button>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>A2A Medical UI</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">A2A Medical</div>
+      <div class="right-actions">
+        <button id="btn-refresh-agents" class="btn">Làm mới agents</button>
+        <span id="host-status" class="status-badge">Host: unknown</span>
       </div>
-    </div>
-  </div>
+    </header>
 
-  <script src="/static/js/utils.js"></script>
-  <script src="/static/js/chat.js"></script>
-  <script src="/static/js/form.js"></script>
-  <script src="/static/js/options.js"></script>
-  <script src="/static/js/main.js"></script>
-</body>
+    <main class="layout">
+      <section class="chat-pane">
+        <div id="chat-log" class="chat-log"></div>
+        <form id="chat-form" class="chat-input">
+          <input id="chat-text" type="text" placeholder="Nhập câu hỏi triệu chứng…" />
+          <button class="btn" type="submit">Gửi</button>
+        </form>
+      </section>
+
+      <aside class="info-pane">
+        <div class="card">
+          <h3>Thông tin bệnh nhân</h3>
+          <div class="grid">
+            <label>Họ tên<input id="pt-name"/></label>
+            <label>Tuổi<input id="pt-age" type="number" min="0"/></label>
+            <label>Giới tính<select id="pt-gender"><option value="">—</option><option>Nam</option><option>Nữ</option><option>Khác</option></select></label>
+          </div>
+          <label>Tiền sử bệnh<textarea id="pt-history" rows="3" placeholder="Dị ứng, thuốc đang dùng…"></textarea></label>
+          <button id="btn-save-history" class="btn btn-light">Lưu thông tin</button>
+        </div>
+
+        <div class="card">
+          <h3>Đặt lịch khám</h3>
+          <div class="grid">
+            <label>Chuyên khoa<select id="sp-specialty"></select></label>
+            <label>Ngày mong muốn<input id="sp-date" type="date"/></label>
+          </div>
+          <label>Ghi chú<textarea id="sp-note" rows="2"></textarea></label>
+          <button id="btn-schedule" class="btn">Lấy lịch khả dụng</button>
+          <div id="schedule-results" class="result"></div>
+        </div>
+
+        <div class="card">
+          <h3>Tư vấn chi phí</h3>
+          <label>Dịch vụ / thủ thuật<textarea id="cost-items" rows="2" placeholder="Ví dụ: khám nội, xét nghiệm máu…"></textarea></label>
+          <button id="btn-cost" class="btn">Ước tính</button>
+          <div id="cost-results" class="result"></div>
+        </div>
+
+        <div class="card">
+          <h3>Agents</h3>
+          <ul id="agents-list" class="list"></ul>
+        </div>
+      </aside>
+    </main>
+
+    <script src="/static/js/utils.js"></script>
+    <script src="/static/js/options.js"></script>
+    <script src="/static/js/chat.js"></script>
+    <script src="/static/js/form.js"></script>
+    <script src="/static/js/main.js"></script>
+  </body>
 </html>

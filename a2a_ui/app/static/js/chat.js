@@ -1,33 +1,26 @@
-function addMessage(role, content) {
-    const chatContainer = document.getElementById("chatContainer");
-    const msg = document.createElement("div");
-    msg.className = "message " + role;
-    msg.innerHTML = content;
-    chatContainer.appendChild(msg);
-    chatContainer.scrollTop = chatContainer.scrollHeight;
+const { fetchJSON, addMsg, patientPayload } = window.__utils;
+
+async function sendChat(text) {
+  addMsg(text, "user");
+  try {
+    const payload = { message: text, patient: patientPayload(), mode: "orchestrate" };
+    const data = await fetchJSON("/api/chat", { method: "POST", body: JSON.stringify(payload) });
+    const reply = data.reply || JSON.stringify(data);
+    addMsg(reply, "bot");
+  } catch (e) {
+    addMsg("Lỗi gửi tin: " + e.message, "bot");
   }
-  
-function handleKeyPress(event) {
-if (event.key === "Enter") sendMessage();
-}
-function renderResponse(data) {
-if (data.type === "text") {
-    addMessage("agent", data.content);
-} 
-else if (data.type === "form") {
-    renderForm(data);
-} 
-else if (data.type === "options") {
-    renderOptions(data);
-}
-else if (data.type === "host") {
-    renderHostSteps(data.steps);
-}
 }
 
-function renderHostSteps(steps) {
-steps.forEach(step => {
-    addMessage("agent", `<strong>${step.agent}:</strong> ${step.message}`);
-});
+function initChat() {
+  const form = document.getElementById("chat-form");
+  const inp = document.getElementById("chat-text");
+  form.addEventListener("submit", (ev) => {
+    ev.preventDefault();
+    const text = inp.value.trim(); if (!text) return;
+    inp.value = "";
+    sendChat(text);
+  });
 }
-  
+
+window.__chat = { initChat };
